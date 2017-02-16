@@ -4,6 +4,24 @@
 
     
   <url>
+    <loc>http://www.fedjs.com/2017/02/webpack-jquery/</loc>
+    <lastmod>2017-02-16T08:56:31.430Z</lastmod>
+    <data>
+        <display>
+        <title>webpack全局加载第三方插件jQuery类库</title>
+        <pubTime>2017-02-16T01:21:04.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.fedjs.com/2017/02/webpack-react-%E5%85%A5%E9%97%A8Demo%E5%B1%95%E7%A4%BA/</loc>
     <lastmod>2017-02-16T08:41:36.375Z</lastmod>
     <data>
@@ -30,24 +48,6 @@
         <display>
         <title>webpack入门篇：config参数详解</title>
         <pubTime>2017-02-16T07:15:07.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack-jquery/</loc>
-    <lastmod>2017-02-16T07:04:34.204Z</lastmod>
-    <data>
-        <display>
-        <title>webpack全局加载第三方插件jQuery类库</title>
-        <pubTime>2017-02-16T01:21:04.000Z</pubTime>
         
          
            

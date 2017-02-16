@@ -89,22 +89,19 @@
 
 
 
-<meta name="description" content="介绍Webpack 是
-用webpack最大的问题就是不需要再关注依赖顺序了
-第一种方法（直接引入）：1234567var webpack = require(&apos;webpack&apos;);// 你要引入jquery并交由webpack打包 只需要这样使用var $ = require(&apos;jquery&apos;);// webpack会自动去node_modules 目录中查找资源// console.log(&quot;">
+<meta name="description" content="介绍webpack是近期最火的一款模块加载器兼打包工具，它能把各种资源，例如JS（含JSX）、coffee、样式（含less/sass）、图片等都作为模块来使用和处理。
+我们可以直接使用 require(XXX) 的形式来引入各模块，即使它们可能需要经过编译（比如JSX和sass），但我们无须在上面花费太多心思，因为 webpack 有着各种健全的加载器（loader）在默默处理这些事情，这块我们">
 <meta property="og:type" content="article">
 <meta property="og:title" content="webpack全局加载第三方插件jQuery类库">
 <meta property="og:url" content="http://www.fedjs.com/2017/02/webpack-jquery/index.html">
 <meta property="og:site_name" content="浮声新志">
-<meta property="og:description" content="介绍Webpack 是
-用webpack最大的问题就是不需要再关注依赖顺序了
-第一种方法（直接引入）：1234567var webpack = require(&apos;webpack&apos;);// 你要引入jquery并交由webpack打包 只需要这样使用var $ = require(&apos;jquery&apos;);// webpack会自动去node_modules 目录中查找资源// console.log(&quot;">
-<meta property="og:updated_time" content="2017-02-16T07:04:34.204Z">
+<meta property="og:description" content="介绍webpack是近期最火的一款模块加载器兼打包工具，它能把各种资源，例如JS（含JSX）、coffee、样式（含less/sass）、图片等都作为模块来使用和处理。
+我们可以直接使用 require(XXX) 的形式来引入各模块，即使它们可能需要经过编译（比如JSX和sass），但我们无须在上面花费太多心思，因为 webpack 有着各种健全的加载器（loader）在默默处理这些事情，这块我们">
+<meta property="og:updated_time" content="2017-02-16T08:56:31.430Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="webpack全局加载第三方插件jQuery类库">
-<meta name="twitter:description" content="介绍Webpack 是
-用webpack最大的问题就是不需要再关注依赖顺序了
-第一种方法（直接引入）：1234567var webpack = require(&apos;webpack&apos;);// 你要引入jquery并交由webpack打包 只需要这样使用var $ = require(&apos;jquery&apos;);// webpack会自动去node_modules 目录中查找资源// console.log(&quot;">
+<meta name="twitter:description" content="介绍webpack是近期最火的一款模块加载器兼打包工具，它能把各种资源，例如JS（含JSX）、coffee、样式（含less/sass）、图片等都作为模块来使用和处理。
+我们可以直接使用 require(XXX) 的形式来引入各模块，即使它们可能需要经过编译（比如JSX和sass），但我们无须在上面花费太多心思，因为 webpack 有着各种健全的加载器（loader）在默默处理这些事情，这块我们">
 
 
 
@@ -362,8 +359,11 @@
       
 
       
-        <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>Webpack 是</p>
+        <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>webpack是近期最火的一款模块加载器兼打包工具，它能把各种资源，例如JS（含JSX）、coffee、样式（含less/sass）、图片等都作为模块来使用和处理。</p>
+<p>我们可以直接使用 require(XXX) 的形式来引入各模块，即使它们可能需要经过编译（比如JSX和sass），但我们无须在上面花费太多心思，因为 webpack 有着各种健全的加载器（loader）在默默处理这些事情，这块我们后续会提到。</p>
 <p>用webpack最大的问题就是不需要再关注依赖顺序了</p>
+<p><a href="http://webpack.github.io/" target="_blank" rel="external">【webpack 官网】</a></p>
+<p><a href="http://webpack.github.io/docs/" target="_blank" rel="external">【webpack 入门文档】</a></p>
 <h1 id="第一种方法（直接引入）："><a href="#第一种方法（直接引入）：" class="headerlink" title="第一种方法（直接引入）："></a>第一种方法（直接引入）：</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> webpack = <span class="built_in">require</span>(<span class="string">'webpack'</span>);</div><div class="line"><span class="comment">// 你要引入jquery并交由webpack打包 只需要这样使用</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> $ = <span class="built_in">require</span>(<span class="string">'jquery'</span>);</div><div class="line"></div><div class="line"><span class="comment">// webpack会自动去node_modules 目录中查找资源</span></div><div class="line"><span class="comment">// console.log("一切就是如此简单愉快！")</span></div></pre></td></tr></table></figure>
 <h1 id="第二种方法（webpack插件引入）："><a href="#第二种方法（webpack插件引入）：" class="headerlink" title="第二种方法（webpack插件引入）："></a>第二种方法（webpack插件引入）：</h1><p>主要依靠 webpack 中 ProvidePlugin 来实现。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">    <span class="attr">resolve</span>: &#123;</div><div class="line">        <span class="attr">root</span>: [],</div><div class="line">        <span class="attr">alias</span>: &#123;</div><div class="line">            <span class="string">'jquery'</span>: path.resolve(rootDir, <span class="string">'./lib/jquery.min.js'</span>); </div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    <span class="attr">plugins</span>: [</div><div class="line">        <span class="keyword">new</span> webpack.ProvidePlugin(&#123;</div><div class="line">            <span class="attr">$</span>: <span class="string">'jquery'</span></div><div class="line">        &#125;),</div><div class="line">    ]</div><div class="line">&#125;;</div></pre></td></tr></table></figure>

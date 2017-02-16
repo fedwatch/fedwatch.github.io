@@ -89,25 +89,25 @@
 
 
 
-<meta name="description" content="#什么是模块化开发模块化开发（modular development）,
+<meta name="description" content="什么是模块化开发模块化开发（modular development）,
 模块化开发可以为我们解决以下问题
 其一、恼人的命名冲突：这个确实够烦人，为了解决之，我们动用闭包作用域、我们动用命名空间，再或者… 
-其二、烦琐的文件依赖：这个问题更不必说，我们做前端支持的，常常要替后端同学们解决这类问题，我们自己也常常忽略这类问题。平常的开发中，我们要对我们的JS文件的加载顺序要小心加小心。一个字——确实">
+其二、烦琐的文件依赖：这个问题更不必说，我们做前端支持的，常常要替后端同学们解决这类问题，我们自己也常常忽略这类问题。平常的开发中，我们要对我们的JS文件的加载顺序要小心加小心。一个字——确实烦">
 <meta property="og:type" content="article">
 <meta property="og:title" content="扫盲:JS模块化开发">
 <meta property="og:url" content="http://www.fedjs.com/2016/12/talk-about-javascript-module-development/index.html">
 <meta property="og:site_name" content="浮声新志">
-<meta property="og:description" content="#什么是模块化开发模块化开发（modular development）,
+<meta property="og:description" content="什么是模块化开发模块化开发（modular development）,
 模块化开发可以为我们解决以下问题
 其一、恼人的命名冲突：这个确实够烦人，为了解决之，我们动用闭包作用域、我们动用命名空间，再或者… 
-其二、烦琐的文件依赖：这个问题更不必说，我们做前端支持的，常常要替后端同学们解决这类问题，我们自己也常常忽略这类问题。平常的开发中，我们要对我们的JS文件的加载顺序要小心加小心。一个字——确实">
-<meta property="og:updated_time" content="2017-02-16T01:39:48.590Z">
+其二、烦琐的文件依赖：这个问题更不必说，我们做前端支持的，常常要替后端同学们解决这类问题，我们自己也常常忽略这类问题。平常的开发中，我们要对我们的JS文件的加载顺序要小心加小心。一个字——确实烦">
+<meta property="og:updated_time" content="2017-02-16T05:50:22.700Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="扫盲:JS模块化开发">
-<meta name="twitter:description" content="#什么是模块化开发模块化开发（modular development）,
+<meta name="twitter:description" content="什么是模块化开发模块化开发（modular development）,
 模块化开发可以为我们解决以下问题
 其一、恼人的命名冲突：这个确实够烦人，为了解决之，我们动用闭包作用域、我们动用命名空间，再或者… 
-其二、烦琐的文件依赖：这个问题更不必说，我们做前端支持的，常常要替后端同学们解决这类问题，我们自己也常常忽略这类问题。平常的开发中，我们要对我们的JS文件的加载顺序要小心加小心。一个字——确实">
+其二、烦琐的文件依赖：这个问题更不必说，我们做前端支持的，常常要替后端同学们解决这类问题，我们自己也常常忽略这类问题。平常的开发中，我们要对我们的JS文件的加载顺序要小心加小心。一个字——确实烦">
 
 
 
@@ -343,18 +343,17 @@
       
 
       
-        <p>#什么是模块化开发<br>模块化开发（modular development）,</p>
+        <h1 id="什么是模块化开发"><a href="#什么是模块化开发" class="headerlink" title="什么是模块化开发"></a>什么是模块化开发</h1><p>模块化开发（modular development）,</p>
 <p>模块化开发可以为我们解决以下问题</p>
 <p>其一、恼人的命名冲突：<br>这个确实够烦人，为了解决之，我们动用闭包作用域、我们动用命名空间，再或者… </p>
 <p>其二、烦琐的文件依赖：<br>这个问题更不必说，我们做前端支持的，常常要替后端同学们解决这类问题，我们自己也常常忽略这类问题。平常的开发中，我们要对我们的JS文件的加载顺序要小心加小心。一个字——确实烦。</p>
 <p>其三、严重依赖文件的加载顺序：<br>当你使用script引入类库和外部脚本的时候肯定会遇到 类库标识未定义的问题等等问题像“$定义不存在、$.xxx() is not function”这样或那样的问题，一般都是类库严重依赖script文件的加载顺序导致的。</p>
-<p>#模块化开发的规范有哪些？<br>CommonJS和AMD、CMD、UMD。</p>
+<h1 id="模块化开发的规范有哪些？"><a href="#模块化开发的规范有哪些？" class="headerlink" title="模块化开发的规范有哪些？"></a>模块化开发的规范有哪些？</h1><p>CommonJS和AMD、CMD、UMD。</p>
 <p>CommonJS代表：</p>
 <p>AMD代表： Require.js 、 curl.js</p>
 <p>CMD代表： Sea.js</p>
-<p>#资源介绍：</p>
-<p>###博客资料：<br><a href="http://www.ruanyifeng.com/blog/2012/10/javascript_module.html" target="_blank" rel="external">Javascript模块化编程（一）：模块的写法 - 阮一峰博客</a><br><a href="http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html" target="_blank" rel="external">Javascript模块化编程（二）：AMD规范 - 阮一峰博客</a><br><a href="http://www.ruanyifeng.com/blog/2012/11/require_js.html" target="_blank" rel="external">Javascript模块化编程（三）：require.js的用法 - 阮一峰博客</a></p>
-<p>###视频（Video）<br><img src="" alt=""></p>
+<h1 id="资源介绍："><a href="#资源介绍：" class="headerlink" title="资源介绍："></a>资源介绍：</h1><h3 id="博客资料："><a href="#博客资料：" class="headerlink" title="博客资料："></a>博客资料：</h3><p><a href="http://www.ruanyifeng.com/blog/2012/10/javascript_module.html" target="_blank" rel="external">Javascript模块化编程（一）：模块的写法 - 阮一峰博客</a><br><a href="http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html" target="_blank" rel="external">Javascript模块化编程（二）：AMD规范 - 阮一峰博客</a><br><a href="http://www.ruanyifeng.com/blog/2012/11/require_js.html" target="_blank" rel="external">Javascript模块化编程（三）：require.js的用法 - 阮一峰博客</a></p>
+<h3 id="视频（Video）"><a href="#视频（Video）" class="headerlink" title="视频（Video）"></a>视频（Video）</h3><p><img src="" alt=""></p>
       
     </div>
 
@@ -446,8 +445,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="蒋万万">
           <p class="site-author-name" itemprop="name">蒋万万</p>
@@ -508,6 +516,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是模块化开发"><span class="nav-number">1.</span> <span class="nav-text">什么是模块化开发</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#模块化开发的规范有哪些？"><span class="nav-number">2.</span> <span class="nav-text">模块化开发的规范有哪些？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#资源介绍："><span class="nav-number">3.</span> <span class="nav-text">资源介绍：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#博客资料："><span class="nav-number">3.0.1.</span> <span class="nav-text">博客资料：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#视频（Video）"><span class="nav-number">3.0.2.</span> <span class="nav-text">视频（Video）</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>

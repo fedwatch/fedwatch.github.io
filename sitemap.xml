@@ -2,23 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.fedjs.com/2017/02/webpack-jquery/</loc>
+    
+    <lastmod>2017-02-16T06:12:01.069Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fedjs.com/2017/02/npm%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/</loc>
+    
+    <lastmod>2017-02-16T06:05:21.961Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.fedjs.com/2016/12/talk-about-javascript-module-development/</loc>
     
-    <lastmod>2017-02-16T05:50:22.700Z</lastmod>
+    <lastmod>2017-02-16T06:01:40.988Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.fedjs.com/2017/02/webpack-react-redux-startkit/</loc>
     
-    <lastmod>2017-02-16T01:21:05.037Z</lastmod>
+    <lastmod>2017-02-16T06:01:13.880Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.fedjs.com/2016/12/islands-capriccio/</loc>
     
-    <lastmod>2017-02-06T03:49:45.749Z</lastmod>
+    <lastmod>2017-02-16T06:00:06.416Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fedjs.com/2016/12/Life-in-Shengsi-Islands/</loc>
+    
+    <lastmod>2017-02-16T05:59:51.195Z</lastmod>
     
   </url>
   
@@ -33,13 +54,6 @@
     <loc>http://www.fedjs.com/2016/12/sale-yourself-for-money/</loc>
     
     <lastmod>2016-12-21T06:08:26.754Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fedjs.com/2016/12/Life-in-Shengsi-Islands/</loc>
-    
-    <lastmod>2016-12-21T01:56:29.275Z</lastmod>
     
   </url>
   

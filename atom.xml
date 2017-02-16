@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.fedjs.com/"/>
-  <updated>2017-02-16T01:21:05.037Z</updated>
+  <updated>2017-02-16T06:05:21.961Z</updated>
   <id>http://www.fedjs.com/</id>
   
   <author>
@@ -16,15 +16,59 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>webpack-react-redux-startkit</title>
-    <link href="http://www.fedjs.com/2017/02/webpack-react-redux-startkit/"/>
-    <id>http://www.fedjs.com/2017/02/webpack-react-redux-startkit/</id>
-    <published>2017-02-16T01:21:04.000Z</published>
-    <updated>2017-02-16T01:21:05.037Z</updated>
+    <title>npm使用入门</title>
+    <link href="http://www.fedjs.com/2017/02/npm%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/"/>
+    <id>http://www.fedjs.com/2017/02/npm使用入门/</id>
+    <published>2017-02-16T06:04:49.000Z</published>
+    <updated>2017-02-16T06:05:21.961Z</updated>
     
     <summary type="html">
     
     </summary>
+    
+      <category term="npm" scheme="http://www.fedjs.com/categories/npm/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>webpack全局加载第三方插件jQuery类库</title>
+    <link href="http://www.fedjs.com/2017/02/webpack-jquery/"/>
+    <id>http://www.fedjs.com/2017/02/webpack-jquery/</id>
+    <published>2017-02-16T01:21:04.000Z</published>
+    <updated>2017-02-16T06:12:01.069Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>Webpack 是<br>用webpack最大的问题就是不需要再关注依赖顺序了</p>
+<p>第一种方法：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> webpack = <span class="built_in">require</span>(<span class="string">'webpack'</span>);</div><div class="line"><span class="comment">// 你要引入jquery并交由webpack打包 只需要这样使用</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> $ = <span class="built_in">require</span>(<span class="string">'jquery'</span>);</div><div class="line"></div><div class="line"><span class="comment">// webpack会自动去node_modules 目录中查找资源</span></div><div class="line"><span class="comment">// console.log("一切就是如此简单愉快！")</span></div></pre></td></tr></table></figure>
+<p>第二种方法：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">    <span class="attr">resolve</span>: &#123;</div><div class="line">        <span class="attr">root</span>: [],</div><div class="line">        <span class="attr">alias</span>: &#123;</div><div class="line">            <span class="string">'jquery'</span>: path.resolve(rootDir, <span class="string">'./lib/jquery.min.js'</span>); </div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    <span class="attr">plugins</span>: [</div><div class="line">        <span class="keyword">new</span> webpack.ProvidePlugin(&#123;</div><div class="line">            <span class="attr">$</span>: <span class="string">'jquery'</span></div><div class="line">        &#125;),</div><div class="line">    ]</div><div class="line">&#125;;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;p&gt;Webpack 是&lt;br&gt;用webpack最大的问题就是不需要再关注依赖顺序了&lt;/p&gt;
+&lt;p&gt;第一种方法：&lt;/p&gt;
+&lt;figure clas
+    
+    </summary>
+    
+      <category term="webpack" scheme="http://www.fedjs.com/categories/webpack/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>webpack-react-redux-startkit</title>
+    <link href="http://www.fedjs.com/2017/02/webpack-react-redux-startkit/"/>
+    <id>http://www.fedjs.com/2017/02/webpack-react-redux-startkit/</id>
+    <published>2017-02-16T01:21:04.000Z</published>
+    <updated>2017-02-16T06:01:13.880Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="webpack" scheme="http://www.fedjs.com/categories/webpack/"/>
     
     
   </entry>
@@ -34,7 +78,7 @@
     <link href="http://www.fedjs.com/2016/12/talk-about-javascript-module-development/"/>
     <id>http://www.fedjs.com/2016/12/talk-about-javascript-module-development/</id>
     <published>2016-12-23T06:32:21.000Z</published>
-    <updated>2017-02-16T05:50:22.700Z</updated>
+    <updated>2017-02-16T06:01:40.988Z</updated>
     
     <content type="html"><![CDATA[<h1 id="什么是模块化开发"><a href="#什么是模块化开发" class="headerlink" title="什么是模块化开发"></a>什么是模块化开发</h1><p>模块化开发（modular development）,</p>
 <p>模块化开发可以为我们解决以下问题</p>
@@ -54,6 +98,8 @@
 &lt;p&gt;模块化开发可以为我们解
     
     </summary>
+    
+      <category term="JS标准指南" scheme="http://www.fedjs.com/categories/JS%E6%A0%87%E5%87%86%E6%8C%87%E5%8D%97/"/>
     
     
   </entry>
@@ -99,7 +145,7 @@
     <link href="http://www.fedjs.com/2016/12/Life-in-Shengsi-Islands/"/>
     <id>http://www.fedjs.com/2016/12/Life-in-Shengsi-Islands/</id>
     <published>2016-12-20T09:32:25.000Z</published>
-    <updated>2016-12-21T01:56:29.275Z</updated>
+    <updated>2017-02-16T05:59:51.195Z</updated>
     
     <content type="html"><![CDATA[<p>这是我第一次踏上这个岛屿，你不用知道她的过去，你只要踏上去就能深刻感受她的不同，而我不仅仅是喜欢那的景色，更大的兴趣是她身上的人和事。</p>]]></content>
     
@@ -109,7 +155,7 @@
     
     </summary>
     
-      <category term="Travels" scheme="http://www.fedjs.com/categories/Travels/"/>
+      <category term="旅行日志" scheme="http://www.fedjs.com/categories/%E6%97%85%E8%A1%8C%E6%97%A5%E5%BF%97/"/>
     
     
       <category term="游记" scheme="http://www.fedjs.com/tags/%E6%B8%B8%E8%AE%B0/"/>
@@ -121,7 +167,7 @@
     <link href="http://www.fedjs.com/2016/12/islands-capriccio/"/>
     <id>http://www.fedjs.com/2016/12/islands-capriccio/</id>
     <published>2016-12-20T07:59:32.000Z</published>
-    <updated>2017-02-06T03:49:45.749Z</updated>
+    <updated>2017-02-16T06:00:06.416Z</updated>
     
     <content type="html"><![CDATA[<p>没什么人明白自由意味着什么，我也只是在看到别人嘴角泛起笑容的时候，能隐约感受到。</p>
 <p>本来只是想出来散散心的，所以并没有内心里走的匆忙。</p>
@@ -138,7 +184,7 @@
     
     </summary>
     
-      <category term="Travels" scheme="http://www.fedjs.com/categories/Travels/"/>
+      <category term="旅行日志" scheme="http://www.fedjs.com/categories/%E6%97%85%E8%A1%8C%E6%97%A5%E5%BF%97/"/>
     
     
       <category term="游记" scheme="http://www.fedjs.com/tags/%E6%B8%B8%E8%AE%B0/"/>

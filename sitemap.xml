@@ -2,9 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2017/02/hello-world/</loc>
+    <loc>http://yoursite.com/2016/12/talk-about-javascript-module-development/</loc>
     
-    <lastmod>2017-02-16T03:23:48.640Z</lastmod>
+    <lastmod>2017-02-16T01:39:48.590Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/02/webpack-react-redux-startkit/</loc>
+    
+    <lastmod>2017-02-16T01:21:05.037Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/12/islands-capriccio/</loc>
+    
+    <lastmod>2017-02-06T03:49:45.749Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/12/key-231-sites/</loc>
+    
+    <lastmod>2017-02-06T03:49:45.702Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/12/sale-yourself-for-money/</loc>
+    
+    <lastmod>2016-12-21T06:08:26.754Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/12/Life-in-Shengsi-Islands/</loc>
+    
+    <lastmod>2016-12-21T01:56:29.275Z</lastmod>
     
   </url>
   

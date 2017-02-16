@@ -48,54 +48,13 @@
   </entry>
   
   <entry>
-    <title>webpack全局加载第三方插件jQuery类库</title>
-    <link href="http://www.fedjs.com/2017/02/webpack-jquery/"/>
-    <id>http://www.fedjs.com/2017/02/webpack-jquery/</id>
+    <title>webpack-react-redux-startkit</title>
+    <link href="http://www.fedjs.com/2017/02/webpack-react-redux-startkit/"/>
+    <id>http://www.fedjs.com/2017/02/webpack-react-redux-startkit/</id>
     <published>2017-02-16T01:21:04.000Z</published>
-    <updated>2017-02-16T06:45:29.417Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>Webpack 是</p>
-<p>用webpack最大的问题就是不需要再关注依赖顺序了</p>
-<p>第一种方法：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> webpack = <span class="built_in">require</span>(<span class="string">'webpack'</span>);</div><div class="line"><span class="comment">// 你要引入jquery并交由webpack打包 只需要这样使用</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> $ = <span class="built_in">require</span>(<span class="string">'jquery'</span>);</div><div class="line"></div><div class="line"><span class="comment">// webpack会自动去node_modules 目录中查找资源</span></div><div class="line"><span class="comment">// console.log("一切就是如此简单愉快！")</span></div></pre></td></tr></table></figure>
-<p>第二种方法：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">    <span class="attr">resolve</span>: &#123;</div><div class="line">        <span class="attr">root</span>: [],</div><div class="line">        <span class="attr">alias</span>: &#123;</div><div class="line">            <span class="string">'jquery'</span>: path.resolve(rootDir, <span class="string">'./lib/jquery.min.js'</span>); </div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    <span class="attr">plugins</span>: [</div><div class="line">        <span class="keyword">new</span> webpack.ProvidePlugin(&#123;</div><div class="line">            <span class="attr">$</span>: <span class="string">'jquery'</span></div><div class="line">        &#125;),</div><div class="line">    ]</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-<p>第三种方法：</p>
-<p>loader配置：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">test</span>: <span class="built_in">require</span>.resolve(<span class="string">'jquery'</span>),</div><div class="line">    <span class="attr">loader</span>: <span class="string">'expose?jQuery!expose?$'</span></div><div class="line"> &#125;</div></pre></td></tr></table></figure></p>
-<p>引用方式：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> $ <span class="keyword">from</span> <span class="string">'expose?$!jquery'</span></div><div class="line"><span class="keyword">import</span> <span class="string">'jquery-ui'</span> <span class="comment">//插件可用</span></div></pre></td></tr></table></figure></p>
-<table>
-<thead>
-<tr>
-<th>Tables</th>
-<th>Are</th>
-<th>Cool</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>col 3 is</td>
-<td>right-aligned</td>
-<td>$1600</td>
-</tr>
-<tr>
-<td>col 2 is</td>
-<td>centered</td>
-<td>$12</td>
-</tr>
-<tr>
-<td>zebra stripes</td>
-<td>are neat</td>
-<td>$1</td>
-</tr>
-</tbody>
-</table>]]></content>
+    <updated>2017-02-16T06:01:13.880Z</updated>
     
     <summary type="html">
-    
-      &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;p&gt;Webpack 是&lt;/p&gt;
-&lt;p&gt;用webpack最大的问题就是不需要再关注依赖顺序了&lt;/p&gt;
-&lt;p&gt;第一种方法：&lt;/p&gt;
-&lt;figure 
     
     </summary>
     
@@ -105,13 +64,35 @@
   </entry>
   
   <entry>
-    <title>webpack-react-redux-startkit</title>
-    <link href="http://www.fedjs.com/2017/02/webpack-react-redux-startkit/"/>
-    <id>http://www.fedjs.com/2017/02/webpack-react-redux-startkit/</id>
+    <title>webpack全局加载第三方插件jQuery类库</title>
+    <link href="http://www.fedjs.com/2017/02/webpack-jquery/"/>
+    <id>http://www.fedjs.com/2017/02/webpack-jquery/</id>
     <published>2017-02-16T01:21:04.000Z</published>
-    <updated>2017-02-16T06:01:13.880Z</updated>
+    <updated>2017-02-16T07:04:34.204Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>Webpack 是</p>
+<p>用webpack最大的问题就是不需要再关注依赖顺序了</p>
+<h1 id="第一种方法（直接引入）："><a href="#第一种方法（直接引入）：" class="headerlink" title="第一种方法（直接引入）："></a>第一种方法（直接引入）：</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> webpack = <span class="built_in">require</span>(<span class="string">'webpack'</span>);</div><div class="line"><span class="comment">// 你要引入jquery并交由webpack打包 只需要这样使用</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> $ = <span class="built_in">require</span>(<span class="string">'jquery'</span>);</div><div class="line"></div><div class="line"><span class="comment">// webpack会自动去node_modules 目录中查找资源</span></div><div class="line"><span class="comment">// console.log("一切就是如此简单愉快！")</span></div></pre></td></tr></table></figure>
+<h1 id="第二种方法（webpack插件引入）："><a href="#第二种方法（webpack插件引入）：" class="headerlink" title="第二种方法（webpack插件引入）："></a>第二种方法（webpack插件引入）：</h1><p>主要依靠 webpack 中 ProvidePlugin 来实现。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">    <span class="attr">resolve</span>: &#123;</div><div class="line">        <span class="attr">root</span>: [],</div><div class="line">        <span class="attr">alias</span>: &#123;</div><div class="line">            <span class="string">'jquery'</span>: path.resolve(rootDir, <span class="string">'./lib/jquery.min.js'</span>); </div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    <span class="attr">plugins</span>: [</div><div class="line">        <span class="keyword">new</span> webpack.ProvidePlugin(&#123;</div><div class="line">            <span class="attr">$</span>: <span class="string">'jquery'</span></div><div class="line">        &#125;),</div><div class="line">    ]</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<h1 id="第三种方法（expose-loader-配置）："><a href="#第三种方法（expose-loader-配置）：" class="headerlink" title="第三种方法（expose-loader 配置）："></a>第三种方法（expose-loader 配置）：</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">test</span>: <span class="built_in">require</span>.resolve(<span class="string">'jquery'</span>),</div><div class="line">    <span class="attr">loader</span>: <span class="string">'expose?jQuery!expose?$'</span></div><div class="line"> &#125;</div></pre></td></tr></table></figure>
+<p>引用方式：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> $ <span class="keyword">from</span> <span class="string">'expose?$!jquery'</span></div><div class="line"><span class="keyword">import</span> <span class="string">'jquery-ui'</span> <span class="comment">//插件可用</span></div></pre></td></tr></table></figure></p>
+<h1 id="第四种方法（封装jQuery）："><a href="#第四种方法（封装jQuery）：" class="headerlink" title="第四种方法（封装jQuery）："></a>第四种方法（封装jQuery）：</h1><ol>
+<li><p>生成 jquery-vendor.js</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> $ = <span class="built_in">require</span>(<span class="string">'jquery'</span>);</div><div class="line"><span class="comment">// es6</span></div><div class="line"><span class="keyword">import</span> $ <span class="keyword">from</span> <span class="string">'jquery'</span>;</div><div class="line"><span class="built_in">window</span>.$ = $;</div><div class="line"><span class="built_in">window</span>.jQuery = $;</div><div class="line">exports <span class="keyword">default</span> $</div></pre></td></tr></table></figure>
+</li>
+<li><p>类库引用jquery时指向jquery-vendor.js</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> $ <span class="keyword">from</span> <span class="string">'$&#123;webroot&#125;/jquery-vendor.js'</span></div><div class="line"><span class="keyword">import</span> <span class="string">'jquery-ui'</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>调用方便，可在webpack配置文件中创建jquery-vendor.js的别名</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">alias:&#123;</div><div class="line">    <span class="string">'jquery'</span>:<span class="string">'$&#123;webroot&#125;/jquery-vendor.js'</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></li>
+</ol>]]></content>
     
     <summary type="html">
+    
+      &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;p&gt;Webpack 是&lt;/p&gt;
+&lt;p&gt;用webpack最大的问题就是不需要再关注依赖顺序了&lt;/p&gt;
+&lt;h1 id=&quot;第一种方法（直接引入）：&quot;&gt;
     
     </summary>
     

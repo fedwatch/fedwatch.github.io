@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.fedjs.com/"/>
-  <updated>2017-02-16T06:05:21.961Z</updated>
+  <updated>2017-02-16T06:29:21.564Z</updated>
   <id>http://www.fedjs.com/</id>
   
   <author>
@@ -14,6 +14,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>webpack插件篇：20个你必须知道的插件</title>
+    <link href="http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9A20%E4%B8%AA%E4%BD%A0%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E7%9A%84%E6%8F%92%E4%BB%B6/"/>
+    <id>http://www.fedjs.com/2017/02/webpack插件篇：20个你必须知道的插件/</id>
+    <published>2017-02-16T06:29:04.000Z</published>
+    <updated>2017-02-16T06:29:21.564Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="webpack" scheme="http://www.fedjs.com/categories/webpack/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>npm使用入门</title>
@@ -36,14 +52,43 @@
     <link href="http://www.fedjs.com/2017/02/webpack-jquery/"/>
     <id>http://www.fedjs.com/2017/02/webpack-jquery/</id>
     <published>2017-02-16T01:21:04.000Z</published>
-    <updated>2017-02-16T06:13:17.826Z</updated>
+    <updated>2017-02-16T06:45:29.417Z</updated>
     
     <content type="html"><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>Webpack 是</p>
 <p>用webpack最大的问题就是不需要再关注依赖顺序了</p>
 <p>第一种方法：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> webpack = <span class="built_in">require</span>(<span class="string">'webpack'</span>);</div><div class="line"><span class="comment">// 你要引入jquery并交由webpack打包 只需要这样使用</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> $ = <span class="built_in">require</span>(<span class="string">'jquery'</span>);</div><div class="line"></div><div class="line"><span class="comment">// webpack会自动去node_modules 目录中查找资源</span></div><div class="line"><span class="comment">// console.log("一切就是如此简单愉快！")</span></div></pre></td></tr></table></figure>
 <p>第二种方法：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">    <span class="attr">resolve</span>: &#123;</div><div class="line">        <span class="attr">root</span>: [],</div><div class="line">        <span class="attr">alias</span>: &#123;</div><div class="line">            <span class="string">'jquery'</span>: path.resolve(rootDir, <span class="string">'./lib/jquery.min.js'</span>); </div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    <span class="attr">plugins</span>: [</div><div class="line">        <span class="keyword">new</span> webpack.ProvidePlugin(&#123;</div><div class="line">            <span class="attr">$</span>: <span class="string">'jquery'</span></div><div class="line">        &#125;),</div><div class="line">    ]</div><div class="line">&#125;;</div></pre></td></tr></table></figure>]]></content>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">    <span class="attr">resolve</span>: &#123;</div><div class="line">        <span class="attr">root</span>: [],</div><div class="line">        <span class="attr">alias</span>: &#123;</div><div class="line">            <span class="string">'jquery'</span>: path.resolve(rootDir, <span class="string">'./lib/jquery.min.js'</span>); </div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    <span class="attr">plugins</span>: [</div><div class="line">        <span class="keyword">new</span> webpack.ProvidePlugin(&#123;</div><div class="line">            <span class="attr">$</span>: <span class="string">'jquery'</span></div><div class="line">        &#125;),</div><div class="line">    ]</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<p>第三种方法：</p>
+<p>loader配置：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">test</span>: <span class="built_in">require</span>.resolve(<span class="string">'jquery'</span>),</div><div class="line">    <span class="attr">loader</span>: <span class="string">'expose?jQuery!expose?$'</span></div><div class="line"> &#125;</div></pre></td></tr></table></figure></p>
+<p>引用方式：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> $ <span class="keyword">from</span> <span class="string">'expose?$!jquery'</span></div><div class="line"><span class="keyword">import</span> <span class="string">'jquery-ui'</span> <span class="comment">//插件可用</span></div></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th>Are</th>
+<th>Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td>right-aligned</td>
+<td>$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td>centered</td>
+<td>$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td>are neat</td>
+<td>$1</td>
+</tr>
+</tbody>
+</table>]]></content>
     
     <summary type="html">
     

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.fedjs.com/"/>
-  <updated>2017-02-16T07:15:32.734Z</updated>
+  <updated>2017-02-16T08:21:23.240Z</updated>
   <id>http://www.fedjs.com/</id>
   
   <author>
@@ -14,6 +14,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>react-webpack 入门Demo展示</title>
+    <link href="http://www.fedjs.com/2017/02/webpack-react-%E5%85%A5%E9%97%A8Demo%E5%B1%95%E7%A4%BA/"/>
+    <id>http://www.fedjs.com/2017/02/webpack-react-入门Demo展示/</id>
+    <published>2017-02-16T07:54:07.000Z</published>
+    <updated>2017-02-16T08:21:23.240Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="基本命令配置"><a href="#基本命令配置" class="headerlink" title="基本命令配置"></a>基本命令配置</h1><ol>
+<li><p>node环境下npm包的安装依赖 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">$ mkdir react-demo &amp;&amp; <span class="built_in">cd</span> react-demo</div><div class="line">$ npm i -S webpack webpack-dev-server \</div><div class="line">html-webpack-plugin webpack-merge \</div><div class="line">babel-loader babel-core css-loader \</div><div class="line">style-loader babel-preset-react-hmre \</div><div class="line">babel-preset-es2015 babel-preset-react -D</div><div class="line"></div><div class="line">$ mkdir app dist assets</div><div class="line">$ vim assets/index.tmpl.html</div></pre></td></tr></table></figure>
+</li>
+<li><p>编写 index.tmpl.html</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;<span class="name">%=</span> <span class="attr">htmlWebpackPlugin.options.title</span> %&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"root"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>配置你的 package.json 参数</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">"script"</span>:&#123;</div><div class="line">        <span class="attr">"build"</span>:<span class="string">"webpack ."</span>,</div><div class="line">        <span class="attr">"start"</span>:<span class="string">"webpack-dev-server ."</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">"babel"</span>:&#123;</div><div class="line">      <span class="attr">"presets"</span>:[</div><div class="line">        <span class="string">"es2015"</span>,<span class="string">"react"</span></div><div class="line">      ],</div><div class="line">      <span class="attr">"env"</span>:&#123;</div><div class="line">        <span class="attr">"start"</span>:&#123;</div><div class="line">          <span class="attr">"presets"</span>:[</div><div class="line">              <span class="string">"react-hmre"</span></div><div class="line">          ]</div><div class="line">        &#125;</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>新建 webpack.config.js 文件，来初始化webpack设置</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>);</div><div class="line"><span class="keyword">const</span> HtmlWebpackPlugin = <span class="built_in">require</span>(<span class="string">'html-webpack-plugin'</span>);</div><div class="line"><span class="keyword">const</span> webpack = <span class="built_in">require</span>(<span class="string">'webpack'</span>);</div><div class="line"><span class="keyword">const</span> merge = <span class="built_in">require</span>(<span class="string">'webpack-merge'</span>);</div><div class="line"><span class="keyword">const</span> TAGET = process.env.npm_lifecycle_event;</div><div class="line">process.env.BABEL_ENV = TAGET;</div><div class="line"><span class="keyword">const</span> PATHS = &#123;</div><div class="line">    <span class="attr">app</span>: path.join(__dirname,<span class="string">'app'</span>),</div><div class="line">    <span class="attr">build</span>: path.join(__dirname,<span class="string">'dist'</span>),</div><div class="line">    <span class="attr">template</span>: path.join(__dirname,<span class="string">'assets'</span>,<span class="string">'index.tmpl.html'</span>)</div><div class="line">&#125;;</div><div class="line"><span class="keyword">const</span> common = &#123;</div><div class="line">    <span class="attr">entry</span>:&#123;</div><div class="line">        <span class="attr">app</span>:PATHS.app</div><div class="line">    &#125;,</div><div class="line">    <span class="attr">output</span>:&#123;</div><div class="line">        <span class="attr">path</span>:PATHS.build,</div><div class="line">        <span class="attr">filename</span>:<span class="string">'bundle.js'</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">plugins</span>:[</div><div class="line">        <span class="keyword">new</span> HtmlWebpackPlugin(&#123;</div><div class="line">            <span class="attr">title</span>: <span class="string">'react demo'</span>,</div><div class="line">            <span class="attr">template</span>: PATHS.template,</div><div class="line">            <span class="attr">inject</span>: <span class="string">'body'</span></div><div class="line">        &#125;)</div><div class="line">    ],</div><div class="line">    <span class="attr">module</span>:&#123;</div><div class="line">     <span class="attr">loaders</span>: [</div><div class="line">         &#123;</div><div class="line">          <span class="attr">test</span>: <span class="regexp">/\.jsx?$/</span>,</div><div class="line">          <span class="attr">loaders</span>: [<span class="string">'babel?cacheDirectory'</span>],</div><div class="line">          <span class="attr">include</span>: PATHS.app,</div><div class="line">        &#125;, &#123;</div><div class="line">          <span class="attr">test</span>: <span class="regexp">/\.css$/</span>,</div><div class="line">          <span class="attr">loaders</span>: [<span class="string">'style'</span>, <span class="string">'css'</span>],</div><div class="line">          <span class="attr">include</span>: PATHS.app,</div><div class="line">        &#125;</div><div class="line">     ],</div><div class="line">    &#125;,</div><div class="line">    <span class="attr">resolve</span>:&#123;</div><div class="line">        <span class="attr">extensions</span>:[<span class="string">''</span>,<span class="string">'js'</span>,<span class="string">'jsx'</span>]</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="keyword">if</span>(TAGET === <span class="string">'start'</span> || ! TAGET) &#123;</div><div class="line">    <span class="built_in">module</span>.exports = merge(common,&#123;</div><div class="line">        <span class="attr">devtool</span>:<span class="string">'eval-source-map'</span>,</div><div class="line">        <span class="attr">devServer</span>:&#123;</div><div class="line">            <span class="attr">contentBase</span>:<span class="string">'/dist'</span>,</div><div class="line">            <span class="attr">historyApiFallback</span>: <span class="literal">true</span>,</div><div class="line">            <span class="attr">hot</span>:<span class="literal">true</span>,</div><div class="line">            <span class="attr">inline</span>:<span class="literal">true</span>,</div><div class="line">            <span class="attr">progress</span>:<span class="literal">true</span>,</div><div class="line">            <span class="attr">stats</span>:<span class="string">'errors-only'</span></div><div class="line">        &#125;,</div><div class="line">        <span class="attr">plugins</span>:[</div><div class="line">            <span class="keyword">new</span> webpack.HotModuleRepleacementPlugin(),</div><div class="line">        ]</div><div class="line">    &#125;);</div><div class="line">&#125;</div><div class="line"><span class="keyword">if</span>(TAGET === <span class="string">'start'</span> || ! TAGET) &#123;</div><div class="line">    <span class="built_in">module</span>.exports = merge(common,&#123;&#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure></li>
+</ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;基本命令配置&quot;&gt;&lt;a href=&quot;#基本命令配置&quot; class=&quot;headerlink&quot; title=&quot;基本命令配置&quot;&gt;&lt;/a&gt;基本命令配置&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;node环境下npm包的安装依赖 &lt;/p&gt;
+&lt;figure class=&quot;highligh
+    
+    </summary>
+    
+      <category term="react" scheme="http://www.fedjs.com/categories/react/"/>
+    
+    
+      <category term="react , webpack" scheme="http://www.fedjs.com/tags/react-webpack/"/>
+    
+  </entry>
   
   <entry>
     <title>webpack入门篇：config参数详解</title>
@@ -64,6 +100,22 @@
   </entry>
   
   <entry>
+    <title>webpack-react-redux-startkit</title>
+    <link href="http://www.fedjs.com/2017/02/webpack-react-redux-startkit/"/>
+    <id>http://www.fedjs.com/2017/02/webpack-react-redux-startkit/</id>
+    <published>2017-02-16T01:21:04.000Z</published>
+    <updated>2017-02-16T06:01:13.880Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="webpack" scheme="http://www.fedjs.com/categories/webpack/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>webpack全局加载第三方插件jQuery类库</title>
     <link href="http://www.fedjs.com/2017/02/webpack-jquery/"/>
     <id>http://www.fedjs.com/2017/02/webpack-jquery/</id>
@@ -93,22 +145,6 @@
       &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;p&gt;Webpack 是&lt;/p&gt;
 &lt;p&gt;用webpack最大的问题就是不需要再关注依赖顺序了&lt;/p&gt;
 &lt;h1 id=&quot;第一种方法（直接引入）：&quot;&gt;
-    
-    </summary>
-    
-      <category term="webpack" scheme="http://www.fedjs.com/categories/webpack/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>webpack-react-redux-startkit</title>
-    <link href="http://www.fedjs.com/2017/02/webpack-react-redux-startkit/"/>
-    <id>http://www.fedjs.com/2017/02/webpack-react-redux-startkit/</id>
-    <published>2017-02-16T01:21:04.000Z</published>
-    <updated>2017-02-16T06:01:13.880Z</updated>
-    
-    <summary type="html">
     
     </summary>
     

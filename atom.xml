@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.fedjs.com/"/>
-  <updated>2017-02-16T09:36:09.469Z</updated>
+  <updated>2017-02-17T01:08:45.386Z</updated>
   <id>http://www.fedjs.com/</id>
   
   <author>
@@ -16,13 +16,56 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>webpack插件篇：autoprefixer详解</title>
+    <link href="http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9Aautoprefixer%E8%AF%A6%E8%A7%A3/"/>
+    <id>http://www.fedjs.com/2017/02/webpack插件篇：autoprefixer详解/</id>
+    <published>2017-02-17T01:08:04.000Z</published>
+    <updated>2017-02-17T01:08:45.386Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="webpack" scheme="http://www.fedjs.com/categories/webpack/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>阿里云 合租计划 0217</title>
+    <link href="http://www.fedjs.com/2017/02/%E9%98%BF%E9%87%8C%E4%BA%91-%E5%90%88%E7%A7%9F%E8%AE%A1%E5%88%92-0217/"/>
+    <id>http://www.fedjs.com/2017/02/阿里云-合租计划-0217/</id>
+    <published>2017-02-17T01:03:07.000Z</published>
+    <updated>2017-02-17T01:21:58.466Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="为什么要合租"><a href="#为什么要合租" class="headerlink" title="为什么要合租"></a>为什么要合租</h1><blockquote>
+<p>合租是最好的选择，可以让你的遇到一路前行的人。分享、收获都是进步的一部分。 –刘素欣</p>
+</blockquote>
+<h1 id="合租计划展示"><a href="#合租计划展示" class="headerlink" title="合租计划展示"></a>合租计划展示</h1><p>|—|—|—|<br>|最新时间： 2017年02月|<br>|租约名称|服务器配置|联系人|<br>|—|—|—|<br>|最新时间： 2017年01月|<br>|租约名称|服务器配置|联系人|<br>|如有需要发布合租计划可以直接在本站的评论区直接留言|</p>
+<h1 id="竞争力价格"><a href="#竞争力价格" class="headerlink" title="竞争力价格"></a>竞争力价格</h1><h1 id="联系发起人"><a href="#联系发起人" class="headerlink" title="联系发起人"></a>联系发起人</h1><h1 id="财务透明"><a href="#财务透明" class="headerlink" title="财务透明"></a>财务透明</h1><h4 id="注意：-合租者的个人支付信息，平台不对外公布"><a href="#注意：-合租者的个人支付信息，平台不对外公布" class="headerlink" title="注意： 合租者的个人支付信息，平台不对外公布"></a>注意： 合租者的个人支付信息，平台不对外公布</h4>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;为什么要合租&quot;&gt;&lt;a href=&quot;#为什么要合租&quot; class=&quot;headerlink&quot; title=&quot;为什么要合租&quot;&gt;&lt;/a&gt;为什么要合租&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;合租是最好的选择，可以让你的遇到一路前行的人。分享、收获都是进步的一部分。 –刘素
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>webpack.config.js (一)</title>
     <link href="http://www.fedjs.com/2017/02/webpack-config-js-one/"/>
     <id>http://www.fedjs.com/2017/02/webpack-config-js-one/</id>
     <published>2017-02-16T09:35:49.000Z</published>
-    <updated>2017-02-16T09:36:09.469Z</updated>
+    <updated>2017-02-17T01:00:41.072Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Webpack配置文件的重要性"><a href="#Webpack配置文件的重要性" class="headerlink" title="Webpack配置文件的重要性"></a>Webpack配置文件的重要性</h1><h1 id="Webpack-vs-Browserify"><a href="#Webpack-vs-Browserify" class="headerlink" title="Webpack vs Browserify"></a>Webpack vs Browserify</h1><h1 id="技巧"><a href="#技巧" class="headerlink" title="技巧"></a>技巧</h1>]]></content>
     
     <summary type="html">
+    
+      &lt;h1 id=&quot;Webpack配置文件的重要性&quot;&gt;&lt;a href=&quot;#Webpack配置文件的重要性&quot; class=&quot;headerlink&quot; title=&quot;Webpack配置文件的重要性&quot;&gt;&lt;/a&gt;Webpack配置文件的重要性&lt;/h1&gt;&lt;h1 id=&quot;Webpack-vs-Br
     
     </summary>
     
@@ -120,6 +163,22 @@
   </entry>
   
   <entry>
+    <title>webpack-react-redux-startkit</title>
+    <link href="http://www.fedjs.com/2017/02/webpack-react-redux-startkit/"/>
+    <id>http://www.fedjs.com/2017/02/webpack-react-redux-startkit/</id>
+    <published>2017-02-16T01:21:04.000Z</published>
+    <updated>2017-02-16T06:01:13.880Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="webpack" scheme="http://www.fedjs.com/categories/webpack/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>webpack全局加载第三方插件jQuery类库</title>
     <link href="http://www.fedjs.com/2017/02/webpack-jquery/"/>
     <id>http://www.fedjs.com/2017/02/webpack-jquery/</id>
@@ -151,22 +210,6 @@
     <summary type="html">
     
       &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;p&gt;webpack是近期最火的一款模块加载器兼打包工具，它能把各种资源，例如JS（含JSX）、coffee、样式（含less/sass）、图片等
-    
-    </summary>
-    
-      <category term="webpack" scheme="http://www.fedjs.com/categories/webpack/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>webpack-react-redux-startkit</title>
-    <link href="http://www.fedjs.com/2017/02/webpack-react-redux-startkit/"/>
-    <id>http://www.fedjs.com/2017/02/webpack-react-redux-startkit/</id>
-    <published>2017-02-16T01:21:04.000Z</published>
-    <updated>2017-02-16T06:01:13.880Z</updated>
-    
-    <summary type="html">
     
     </summary>
     

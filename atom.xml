@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.fedjs.com/"/>
-  <updated>2017-02-17T02:08:41.137Z</updated>
+  <updated>2017-02-17T02:12:53.821Z</updated>
   <id>http://www.fedjs.com/</id>
   
   <author>
@@ -14,6 +14,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>webpack插件篇：Module Styles模块类型插件有哪些？</title>
+    <link href="http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AModule-Styles%E6%A8%A1%E5%9D%97%E7%B1%BB%E5%9E%8B%E6%8F%92%E4%BB%B6%E6%9C%89%E5%93%AA%E4%BA%9B/"/>
+    <id>http://www.fedjs.com/2017/02/webpack插件篇：Module-Styles模块类型插件有哪些/</id>
+    <published>2017-02-17T02:12:48.000Z</published>
+    <updated>2017-02-17T02:12:53.821Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>webpack插件篇：Optimize优化类插件有哪些？</title>
+    <link href="http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AOptimize%E4%BC%98%E5%8C%96%E7%B1%BB%E6%8F%92%E4%BB%B6%E6%9C%89%E5%93%AA%E4%BA%9B/"/>
+    <id>http://www.fedjs.com/2017/02/webpack插件篇：Optimize优化类插件有哪些/</id>
+    <published>2017-02-17T02:11:45.000Z</published>
+    <updated>2017-02-17T02:11:53.505Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>webpack插件篇：Output输出类插件有哪些？</title>
@@ -150,7 +178,7 @@
     <link href="http://www.fedjs.com/2017/02/%E9%98%BF%E9%87%8C%E4%BA%91-%E5%90%88%E7%A7%9F%E8%AE%A1%E5%88%92-0217/"/>
     <id>http://www.fedjs.com/2017/02/阿里云-合租计划-0217/</id>
     <published>2017-02-17T01:03:07.000Z</published>
-    <updated>2017-02-17T02:10:55.973Z</updated>
+    <updated>2017-02-17T02:13:23.172Z</updated>
     
     <content type="html"><![CDATA[<h1 id="为什么要合租"><a href="#为什么要合租" class="headerlink" title="为什么要合租"></a>为什么要合租</h1><blockquote>
 <p>合租是最好的选择，可以让你的遇到一路前行的人。分享、收获都是进步的一部分。 –刘素欣</p>
@@ -367,7 +395,9 @@
 <blockquote>
 <p>如有需要发布合租计划可以直接在本站的评论区直接留言</p>
 </blockquote>
-<h1 id="竞争力价格"><a href="#竞争力价格" class="headerlink" title="竞争力价格"></a>竞争力价格</h1><h1 id="联系发起人"><a href="#联系发起人" class="headerlink" title="联系发起人"></a>联系发起人</h1><h1 id="财务透明"><a href="#财务透明" class="headerlink" title="财务透明"></a>财务透明</h1><h4 id="注意：-合租者的个人支付信息，平台不对外公布"><a href="#注意：-合租者的个人支付信息，平台不对外公布" class="headerlink" title="注意： 合租者的个人支付信息，平台不对外公布"></a>注意： 合租者的个人支付信息，平台不对外公布</h4>]]></content>
+<h1 id="竞争力价格"><a href="#竞争力价格" class="headerlink" title="竞争力价格"></a>竞争力价格</h1><h1 id="联系发起人"><a href="#联系发起人" class="headerlink" title="联系发起人"></a>联系发起人</h1><h1 id="财务透明"><a href="#财务透明" class="headerlink" title="财务透明"></a>财务透明</h1><blockquote>
+<p>注意： 合租者的个人支付信息，平台不对外公布</p>
+</blockquote>]]></content>
     
     <summary type="html">
     

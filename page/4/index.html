@@ -819,8 +819,12 @@
       
         
           
-            <h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p> ()</p>
-<h1 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+            <h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p>OccurrenceOrderPlugin ()</p>
+<p>Assign the module and chunk ids by occurrence count. Ids that are used often get lower (shorter) ids. This make ids predictable, reduces total file size and is recommended.</p>
+<ul>
+<li><code>preferEntry</code> (boolean) give entry chunks higher priority. This make entry chunks smaller but increases the overall size. (recommended)</li>
+</ul>
+<h1 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> webpack.optimize.OccurrenceOrderPlugin(preferEntry)</div></pre></td></tr></table></figure>
 <h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
           
         
@@ -973,8 +977,12 @@
       
         
           
-            <h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p> ()</p>
-<h1 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+            <h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p>MinChunkSizePlugin ()</p>
+<p>Merge small chunks that are lower than this min size (in chars). Size is approximated.</p>
+<ul>
+<li><code>options.minChunkSize</code> (number) chunks smaller than this number will be merged</li>
+</ul>
+<h1 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> webpack.optimize.MinChunkSizePlugin(options)</div></pre></td></tr></table></figure>
 <h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
           
         
@@ -1127,8 +1135,17 @@
       
         
           
-            <h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p> ()</p>
-<h1 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+            <h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p>LimitChunkCountPlugin (限制块计数插件)</p>
+<p>Limit the chunk count to a defined value. Chunks are merged until it fits.</p>
+<ul>
+<li><p><code>options.maxChunks</code> (number) max number of chunks</p>
+</li>
+<li><p><code>options.chunkOverhead</code> (number) an additional overhead for each chunk in bytes (default 10000, to reflect request delay)</p>
+</li>
+<li><p><code>options.entryChunkMultiplicator</code> (number) a multiplicator for entry chunks (default 10, entry chunks are merged 10 times less likely)</p>
+</li>
+</ul>
+<h1 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> webpack.optimize.LimitChunkCountPlugin(options)</div></pre></td></tr></table></figure>
 <h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
           
         

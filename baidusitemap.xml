@@ -4,6 +4,312 @@
 
     
   <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AHtmlWebpackPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2017-02-17T09:30:42.760Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：HtmlWebpackPlugin详解</title>
+        <pubTime>2017-02-17T03:09:45.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AI18nPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2017-02-17T09:13:42.881Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：I18nPlugin详解</title>
+        <pubTime>2017-02-17T03:02:56.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AImageminPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2017-02-17T08:38:29.032Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：ImageminPlugin详解</title>
+        <pubTime>2017-02-17T02:56:52.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ASWPrecacheWebpackPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2017-02-17T08:37:56.167Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：SWPrecacheWebpackPlugin详解</title>
+        <pubTime>2017-02-17T02:56:12.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AOfflinePlugin%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2017-02-17T08:36:57.328Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：OfflinePlugin详解</title>
+        <pubTime>2017-02-17T02:55:55.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AOccurrenceOrderPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2017-02-17T08:35:55.228Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：OccurrenceOrderPlugin详解</title>
+        <pubTime>2017-02-17T02:53:23.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AMinChunkSizePlugin%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2017-02-17T08:34:55.563Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：MinChunkSizePlugin详解</title>
+        <pubTime>2017-02-17T02:52:12.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ALimitChunkCountPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2017-02-17T08:34:01.272Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：LimitChunkCountPlugin详解</title>
+        <pubTime>2017-02-17T02:51:46.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AOptimize%E4%BC%98%E5%8C%96%E7%B1%BB%E6%8F%92%E4%BB%B6%E6%9C%89%E5%93%AA%E4%BA%9B/</loc>
+    <lastmod>2017-02-17T08:32:23.630Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：Optimize优化类插件有哪些？</title>
+        <pubTime>2017-02-17T02:11:45.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ALabeledModulesPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2017-02-17T08:32:23.572Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：LabeledModulesPlugin详解</title>
+        <pubTime>2017-02-17T02:59:39.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AModule-Styles%E6%A8%A1%E5%9D%97%E7%B1%BB%E5%9E%8B%E6%8F%92%E4%BB%B6%E6%9C%89%E5%93%AA%E4%BA%9B/</loc>
+    <lastmod>2017-02-17T08:32:23.540Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：Module Styles模块类型插件有哪些？</title>
+        <pubTime>2017-02-17T02:12:48.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ADebugging%E8%B0%83%E8%AF%95%E7%B1%BB%E6%8F%92%E4%BB%B6%E6%9C%89%E5%93%AA%E4%BA%9B/</loc>
+    <lastmod>2017-02-17T08:32:23.513Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：Debugging调试类插件有哪些</title>
+        <pubTime>2017-02-17T02:17:59.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AProgressPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2017-02-17T08:32:23.482Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：ProgressPlugin详解</title>
+        <pubTime>2017-02-17T03:06:48.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AConfig%E9%85%8D%E7%BD%AE%E7%B1%BB%E6%8F%92%E4%BB%B6%E6%9C%89%E5%93%AA%E4%BA%9B/</loc>
+    <lastmod>2017-02-17T08:32:23.415Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：Config配置类插件有哪些？</title>
+        <pubTime>2017-02-17T02:08:03.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ADependency-Injection%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E6%8F%92%E4%BB%B6%E6%9C%89%E5%93%AA%E4%BA%9B/</loc>
+    <lastmod>2017-02-17T08:32:23.365Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：Dependency Injection依赖注入插件有哪些</title>
+        <pubTime>2017-02-17T02:15:48.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ANoErrorsPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2017-02-17T08:30:07.551Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：NoErrorsPlugin详解</title>
+        <pubTime>2017-02-17T03:05:27.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AExtendedAPIPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2017-02-17T08:29:26.738Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：ExtendedAPIPlugin详解</title>
+        <pubTime>2017-02-17T03:05:10.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AFaviconsWebpackPlugin%E8%AF%A6%E8%A7%A3/</loc>
     <lastmod>2017-02-17T08:12:01.852Z</lastmod>
     <data>
@@ -40,60 +346,6 @@
 
     
   <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AOfflinePlugin%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2017-02-17T08:10:23.958Z</lastmod>
-    <data>
-        <display>
-        <title>webpack插件篇：OfflinePlugin详解</title>
-        <pubTime>2017-02-17T02:55:55.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ALimitChunkCountPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2017-02-17T08:10:23.926Z</lastmod>
-    <data>
-        <display>
-        <title>webpack插件篇：LimitChunkCountPlugin详解</title>
-        <pubTime>2017-02-17T02:51:46.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AOccurrenceOrderPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2017-02-17T08:10:23.890Z</lastmod>
-    <data>
-        <display>
-        <title>webpack插件篇：OccurrenceOrderPlugin详解</title>
-        <pubTime>2017-02-17T02:53:23.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ABellOnBundlerErrorPlugin%E8%AF%A6%E8%A7%A3/</loc>
     <lastmod>2017-02-17T08:10:23.856Z</lastmod>
     <data>
@@ -112,84 +364,12 @@
 
     
   <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AHtmlWebpackPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2017-02-17T08:10:23.825Z</lastmod>
-    <data>
-        <display>
-        <title>webpack插件篇：HtmlWebpackPlugin详解</title>
-        <pubTime>2017-02-17T03:09:45.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ASWPrecacheWebpackPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2017-02-17T08:10:23.789Z</lastmod>
-    <data>
-        <display>
-        <title>webpack插件篇：SWPrecacheWebpackPlugin详解</title>
-        <pubTime>2017-02-17T02:56:12.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ANgRequirePlugin%E8%AF%A6%E8%A7%A3/</loc>
     <lastmod>2017-02-17T08:10:23.755Z</lastmod>
     <data>
         <display>
         <title>webpack插件篇：NgRequirePlugin详解</title>
         <pubTime>2017-02-17T03:02:02.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AOptimize%E4%BC%98%E5%8C%96%E7%B1%BB%E6%8F%92%E4%BB%B6%E6%9C%89%E5%93%AA%E4%BA%9B/</loc>
-    <lastmod>2017-02-17T08:10:23.724Z</lastmod>
-    <data>
-        <display>
-        <title>webpack插件篇：Optimize优化类插件有哪些？</title>
-        <pubTime>2017-02-17T02:11:45.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ALabeledModulesPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2017-02-17T08:10:23.692Z</lastmod>
-    <data>
-        <display>
-        <title>webpack插件篇：LabeledModulesPlugin详解</title>
-        <pubTime>2017-02-17T02:59:39.000Z</pubTime>
         
          
            
@@ -256,60 +436,6 @@
 
     
   <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AModule-Styles%E6%A8%A1%E5%9D%97%E7%B1%BB%E5%9E%8B%E6%8F%92%E4%BB%B6%E6%9C%89%E5%93%AA%E4%BA%9B/</loc>
-    <lastmod>2017-02-17T08:10:23.557Z</lastmod>
-    <data>
-        <display>
-        <title>webpack插件篇：Module Styles模块类型插件有哪些？</title>
-        <pubTime>2017-02-17T02:12:48.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ADebugging%E8%B0%83%E8%AF%95%E7%B1%BB%E6%8F%92%E4%BB%B6%E6%9C%89%E5%93%AA%E4%BA%9B/</loc>
-    <lastmod>2017-02-17T08:10:23.523Z</lastmod>
-    <data>
-        <display>
-        <title>webpack插件篇：Debugging调试类插件有哪些</title>
-        <pubTime>2017-02-17T02:17:59.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AImageminPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2017-02-17T08:10:23.493Z</lastmod>
-    <data>
-        <display>
-        <title>webpack插件篇：ImageminPlugin详解</title>
-        <pubTime>2017-02-17T02:56:52.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ALocalization%E6%9C%AC%E5%9C%B0%E5%8C%96%E6%8F%92%E4%BB%B6%E6%9C%89%E5%93%AA%E4%BA%9B/</loc>
     <lastmod>2017-02-17T08:10:23.461Z</lastmod>
     <data>
@@ -352,24 +478,6 @@
         <display>
         <title>webpack插件篇：autoprefixer详解</title>
         <pubTime>2017-02-17T01:08:04.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AExtendedAPIPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2017-02-17T08:10:23.357Z</lastmod>
-    <data>
-        <display>
-        <title>webpack插件篇：ExtendedAPIPlugin详解</title>
-        <pubTime>2017-02-17T03:05:10.000Z</pubTime>
         
          
            
@@ -436,48 +544,12 @@
 
     
   <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AI18nPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2017-02-17T08:10:23.193Z</lastmod>
-    <data>
-        <display>
-        <title>webpack插件篇：I18nPlugin详解</title>
-        <pubTime>2017-02-17T03:02:56.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ARewirePlugin%E8%AF%A6%E8%A7%A3/</loc>
     <lastmod>2017-02-17T08:10:23.161Z</lastmod>
     <data>
         <display>
         <title>webpack插件篇：RewirePlugin详解</title>
         <pubTime>2017-02-17T03:01:22.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AMinChunkSizePlugin%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2017-02-17T08:10:23.126Z</lastmod>
-    <data>
-        <display>
-        <title>webpack插件篇：MinChunkSizePlugin详解</title>
-        <pubTime>2017-02-17T02:52:12.000Z</pubTime>
         
          
            
@@ -544,66 +616,12 @@
 
     
   <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AConfig%E9%85%8D%E7%BD%AE%E7%B1%BB%E6%8F%92%E4%BB%B6%E6%9C%89%E5%93%AA%E4%BA%9B/</loc>
-    <lastmod>2017-02-17T08:10:22.966Z</lastmod>
-    <data>
-        <display>
-        <title>webpack插件篇：Config配置类插件有哪些？</title>
-        <pubTime>2017-02-17T02:08:03.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AWebpackBrowserPlugin%E8%AF%A6%E8%A7%A3/</loc>
     <lastmod>2017-02-17T08:10:22.925Z</lastmod>
     <data>
         <display>
         <title>webpack插件篇：WebpackBrowserPlugin详解</title>
         <pubTime>2017-02-17T03:12:43.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ANoErrorsPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2017-02-17T08:10:22.889Z</lastmod>
-    <data>
-        <display>
-        <title>webpack插件篇：NoErrorsPlugin详解</title>
-        <pubTime>2017-02-17T03:05:27.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ADependency-Injection%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E6%8F%92%E4%BB%B6%E6%9C%89%E5%93%AA%E4%BA%9B/</loc>
-    <lastmod>2017-02-17T08:10:22.850Z</lastmod>
-    <data>
-        <display>
-        <title>webpack插件篇：Dependency Injection依赖注入插件有哪些</title>
-        <pubTime>2017-02-17T02:15:48.000Z</pubTime>
         
          
            
@@ -993,24 +1011,6 @@
            
              
               <breadCrumb title="思考随想" url="http://www.fedjs.com/categories/%E6%80%9D%E8%80%83%E9%9A%8F%E6%83%B3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AProgressPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2017-02-17T03:40:39.282Z</lastmod>
-    <data>
-        <display>
-        <title>webpack插件篇：ProgressPlugin详解</title>
-        <pubTime>2017-02-17T03:06:48.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
           
         </display>
     </data>

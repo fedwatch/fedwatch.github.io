@@ -89,22 +89,19 @@
 
 
 
-<meta name="description" content="用途说明 ()
-webpack.config.js配置12
-案例12">
+<meta name="description" content="用途说明HtmlWebpackPlugin (自动生成html插件)
+Generates a solid base html page for your web application with all your webpack generated css and js files built in. Supports custom templates, favicon, html-minific">
 <meta property="og:type" content="article">
 <meta property="og:title" content="webpack插件篇：HtmlWebpackPlugin详解">
 <meta property="og:url" content="http://www.fedjs.com/2017/02/webpack插件篇：HtmlWebpackPlugin详解/index.html">
 <meta property="og:site_name" content="浮声新志">
-<meta property="og:description" content="用途说明 ()
-webpack.config.js配置12
-案例12">
-<meta property="og:updated_time" content="2017-02-17T08:10:23.825Z">
+<meta property="og:description" content="用途说明HtmlWebpackPlugin (自动生成html插件)
+Generates a solid base html page for your web application with all your webpack generated css and js files built in. Supports custom templates, favicon, html-minific">
+<meta property="og:updated_time" content="2017-02-17T09:30:42.760Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="webpack插件篇：HtmlWebpackPlugin详解">
-<meta name="twitter:description" content="用途说明 ()
-webpack.config.js配置12
-案例12">
+<meta name="twitter:description" content="用途说明HtmlWebpackPlugin (自动生成html插件)
+Generates a solid base html page for your web application with all your webpack generated css and js files built in. Supports custom templates, favicon, html-minific">
 
 
 
@@ -362,9 +359,11 @@ webpack.config.js配置12
       
 
       
-        <h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p> ()</p>
-<h1 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
-<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+        <h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p>HtmlWebpackPlugin (自动生成html插件)</p>
+<p>Generates a solid base html page for your web application with all your webpack generated css and js files built in. Supports custom templates, favicon, html-minifications and more:</p>
+<h1 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">HtmlWebpackPlugin = <span class="built_in">require</span>(<span class="string">'html-webpack-plugin'</span>);</div><div class="line"><span class="keyword">new</span> HtmlWebpackPlugin(&#123; <span class="attr">title</span>: <span class="string">'Webpack App'</span> &#125;)</div></pre></td></tr></table></figure>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//webpack.config.js</span></div><div class="line"><span class="keyword">var</span> HtmlWebpackPlugin = <span class="built_in">require</span>(<span class="string">'html-webpack-plugin'</span>);</div><div class="line"><span class="built_in">module</span>.exports=&#123;</div><div class="line">  <span class="attr">entry</span>:<span class="string">'./index.js'</span>,</div><div class="line">  <span class="attr">output</span>:&#123;</div><div class="line">    <span class="attr">path</span>:__dirname+<span class="string">'/dist'</span>,</div><div class="line">    <span class="attr">filename</span>:<span class="string">'bundle.js'</span></div><div class="line">  &#125;,</div><div class="line">  <span class="attr">plugins</span>:[</div><div class="line">    <span class="keyword">new</span> HtmlWebpackPlugin()</div><div class="line">  ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="attr">entry</span>: <span class="string">'index.js'</span>,</div><div class="line">  <span class="attr">output</span>:&#123;</div><div class="line">    <span class="attr">path</span>: <span class="string">'dist'</span>,</div><div class="line">    <span class="attr">filename</span>: <span class="string">'bundle.js'</span></div><div class="line">  &#125;,</div><div class="line">  <span class="attr">plugins</span>: [</div><div class="line">    <span class="keyword">new</span> HtmlWebpackPlugin(&#123;</div><div class="line">      <span class="attr">title</span>: <span class="string">'My App'</span>,<span class="comment">//设置title的名字</span></div><div class="line">      filename: <span class="string">'admin.html'</span>,<span class="comment">//设置这个html的文件名</span></div><div class="line">      template:<span class="string">'header.html'</span>,<span class="comment">//要使用的模块的路径</span></div><div class="line">      inject: <span class="string">'body'</span>,<span class="comment">//把模板注入到哪个标签后</span></div><div class="line">      favicon:<span class="string">'./images/favico.ico'</span>,<span class="comment">//给html添加一个favicon</span></div><div class="line">      minify:<span class="literal">true</span>,<span class="comment">//HTML压缩</span></div><div class="line">      hash:<span class="literal">true</span>,<span class="comment">//hash化</span></div><div class="line">      cache:<span class="literal">false</span>,<span class="comment">//缓存</span></div><div class="line">      showErrors:<span class="literal">false</span>,<span class="comment">//显示错误</span></div><div class="line">      chunks: &#123;</div><div class="line">          <span class="string">"head"</span>: &#123;</div><div class="line">            <span class="string">"entry"</span>: <span class="string">"assets/head_bundle.js"</span>,</div><div class="line">            <span class="string">"css"</span>: [ <span class="string">"main.css"</span> ]</div><div class="line">          &#125;,</div><div class="line">      &#125;,</div><div class="line">      <span class="attr">xhtml</span>:<span class="literal">false</span><span class="comment">//是否自动毕业标签  </span></div><div class="line">      &#125;</div><div class="line">    )</div><div class="line">  ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
     </div>
 
@@ -537,7 +536,7 @@ webpack.config.js配置12
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#用途说明"><span class="nav-number">1.</span> <span class="nav-text">用途说明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#webpack-config-js配置"><span class="nav-number">2.</span> <span class="nav-text">webpack.config.js配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#案例"><span class="nav-number">3.</span> <span class="nav-text">案例</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#用途说明"><span class="nav-number">1.</span> <span class="nav-text">用途说明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#webpack-config-js配置"><span class="nav-number">2.</span> <span class="nav-text">webpack.config.js配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#案例"><span class="nav-number">3.</span> <span class="nav-text">案例</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参数"><span class="nav-number">4.</span> <span class="nav-text">参数</span></a></li></ol></div>
             
 
           </div>

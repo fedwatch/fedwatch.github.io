@@ -89,22 +89,31 @@
 
 
 
-<meta name="description" content="用途说明 ()
-webpack.config.js配置12
-案例12">
+<meta name="description" content="用途说明LimitChunkCountPlugin (限制块计数插件)
+Limit the chunk count to a defined value. Chunks are merged until it fits.
+
+options.maxChunks (number) max number of chunks
+
+options.chunkOverhead (number) an addit">
 <meta property="og:type" content="article">
 <meta property="og:title" content="webpack插件篇：LimitChunkCountPlugin详解">
 <meta property="og:url" content="http://www.fedjs.com/2017/02/webpack插件篇：LimitChunkCountPlugin详解/index.html">
 <meta property="og:site_name" content="浮声新志">
-<meta property="og:description" content="用途说明 ()
-webpack.config.js配置12
-案例12">
-<meta property="og:updated_time" content="2017-02-17T08:10:23.926Z">
+<meta property="og:description" content="用途说明LimitChunkCountPlugin (限制块计数插件)
+Limit the chunk count to a defined value. Chunks are merged until it fits.
+
+options.maxChunks (number) max number of chunks
+
+options.chunkOverhead (number) an addit">
+<meta property="og:updated_time" content="2017-02-17T08:34:01.272Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="webpack插件篇：LimitChunkCountPlugin详解">
-<meta name="twitter:description" content="用途说明 ()
-webpack.config.js配置12
-案例12">
+<meta name="twitter:description" content="用途说明LimitChunkCountPlugin (限制块计数插件)
+Limit the chunk count to a defined value. Chunks are merged until it fits.
+
+options.maxChunks (number) max number of chunks
+
+options.chunkOverhead (number) an addit">
 
 
 
@@ -362,8 +371,17 @@ webpack.config.js配置12
       
 
       
-        <h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p> ()</p>
-<h1 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+        <h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p>LimitChunkCountPlugin (限制块计数插件)</p>
+<p>Limit the chunk count to a defined value. Chunks are merged until it fits.</p>
+<ul>
+<li><p><code>options.maxChunks</code> (number) max number of chunks</p>
+</li>
+<li><p><code>options.chunkOverhead</code> (number) an additional overhead for each chunk in bytes (default 10000, to reflect request delay)</p>
+</li>
+<li><p><code>options.entryChunkMultiplicator</code> (number) a multiplicator for entry chunks (default 10, entry chunks are merged 10 times less likely)</p>
+</li>
+</ul>
+<h1 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> webpack.optimize.LimitChunkCountPlugin(options)</div></pre></td></tr></table></figure>
 <h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
       
     </div>

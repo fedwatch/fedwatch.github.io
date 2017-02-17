@@ -89,13 +89,19 @@
 
 
 
+<meta name="description" content="用途说明NormalModuleReplacementPlugin (正常模块替换插件)
+Replace resources that matches resourceRegExp with newResource. If newResource is relative, it is resolve relative to the previous resource. If newResource">
 <meta property="og:type" content="article">
 <meta property="og:title" content="webpack插件篇：NormalModuleReplacementPlugin详解">
 <meta property="og:url" content="http://www.fedjs.com/2017/02/webpack插件篇：NormalModuleReplacementPlugin详解/index.html">
 <meta property="og:site_name" content="浮声新志">
-<meta property="og:updated_time" content="2017-02-17T03:40:39.964Z">
+<meta property="og:description" content="用途说明NormalModuleReplacementPlugin (正常模块替换插件)
+Replace resources that matches resourceRegExp with newResource. If newResource is relative, it is resolve relative to the previous resource. If newResource">
+<meta property="og:updated_time" content="2017-02-17T05:26:42.493Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="webpack插件篇：NormalModuleReplacementPlugin详解">
+<meta name="twitter:description" content="用途说明NormalModuleReplacementPlugin (正常模块替换插件)
+Replace resources that matches resourceRegExp with newResource. If newResource is relative, it is resolve relative to the previous resource. If newResource">
 
 
 
@@ -353,7 +359,10 @@
       
 
       
-        
+        <h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p>NormalModuleReplacementPlugin (正常模块替换插件)</p>
+<p>Replace resources that matches resourceRegExp with newResource. If newResource is relative, it is resolve relative to the previous resource. If newResource is a function, it is expected to overwrite the ‘request’ attribute of the supplied object.</p>
+<h1 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> webpack.NormalModuleReplacementPlugin(resourceRegExp, newResource)</div></pre></td></tr></table></figure>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> webpack = <span class="built_in">require</span>(<span class="string">'webpack'</span>);</div><div class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>);</div><div class="line"></div><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">  <span class="attr">entry</span>: <span class="string">'./test.js'</span>,</div><div class="line">  <span class="attr">resolve</span>: &#123;</div><div class="line">    <span class="attr">extensions</span>: [<span class="string">'.js'</span>]</div><div class="line">  &#125;,</div><div class="line">  <span class="attr">output</span>: &#123;</div><div class="line">    <span class="attr">path</span>: __dirname,</div><div class="line">    <span class="attr">filename</span>: <span class="string">'test.bundle.js'</span></div><div class="line">  &#125;,</div><div class="line">  <span class="attr">plugins</span>: [</div><div class="line">    <span class="keyword">new</span> webpack.NormalModuleReplacementPlugin(</div><div class="line">      <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">`^<span class="subst">$&#123;path.resolve(<span class="string">'./string.js'</span>)&#125;</span>$`</span>),</div><div class="line">      <span class="function"><span class="keyword">function</span>(<span class="params">result</span>) </span>&#123;</div><div class="line">        result.request = path.resolve(<span class="string">'./string-replacement.js'</span>);</div><div class="line">      &#125;</div><div class="line">    )</div><div class="line">  ]</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
       
     </div>
 
@@ -445,8 +454,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章导航
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            作者介绍
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="蒋万万">
           <p class="site-author-name" itemprop="name">蒋万万</p>
@@ -457,7 +475,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">67</span>
+                <span class="site-state-item-count">68</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -466,7 +484,7 @@
           
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">分类</span>
               
             </div>
@@ -475,7 +493,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -507,6 +525,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#用途说明"><span class="nav-number">1.</span> <span class="nav-text">用途说明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#webpack-config-js配置"><span class="nav-number">2.</span> <span class="nav-text">webpack.config.js配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#案例"><span class="nav-number">3.</span> <span class="nav-text">案例</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>

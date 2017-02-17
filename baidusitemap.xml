@@ -4,6 +4,66 @@
 
     
   <url>
+    <loc>http://www.fedjs.com/2014/01/layout-css/</loc>
+    <lastmod>2017-02-17T05:30:09.910Z</lastmod>
+    <data>
+        <display>
+        <title>css布局指南</title>
+        <pubTime>2014-01-12T07:59:32.000Z</pubTime>
+        
+        <tag>css</tag>
+         
+        <tag>layout</tag>
+         
+        <tag>css2</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://www.fedjs.com/categories/CSS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ANormalModuleReplacementPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2017-02-17T05:26:42.493Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：NormalModuleReplacementPlugin详解</title>
+        <pubTime>2017-02-17T02:47:35.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AWebpackShellPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2017-02-17T03:57:19.688Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：WebpackShellPlugin详解</title>
+        <pubTime>2017-02-17T03:11:37.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AStaticSiteGeneratorWebpackPlugin%E8%AF%A6%E8%A7%A3/</loc>
     <lastmod>2017-02-17T03:41:13.313Z</lastmod>
     <data>
@@ -118,24 +178,6 @@
         <display>
         <title>webpack插件篇：WebpackBrowserPlugin详解</title>
         <pubTime>2017-02-17T03:12:43.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AWebpackShellPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2017-02-17T03:41:13.077Z</lastmod>
-    <data>
-        <display>
-        <title>webpack插件篇：WebpackShellPlugin详解</title>
-        <pubTime>2017-02-17T03:11:37.000Z</pubTime>
         
          
            
@@ -393,24 +435,6 @@
            
              
               <breadCrumb title="思考随想" url="http://www.fedjs.com/categories/%E6%80%9D%E8%80%83%E9%9A%8F%E6%83%B3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ANormalModuleReplacementPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2017-02-17T03:40:39.964Z</lastmod>
-    <data>
-        <display>
-        <title>webpack插件篇：NormalModuleReplacementPlugin详解</title>
-        <pubTime>2017-02-17T02:47:35.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
           
         </display>
     </data>

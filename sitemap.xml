@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.fedjs.com/2014/01/layout-css/</loc>
+    
+    <lastmod>2017-02-17T05:30:09.910Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ANormalModuleReplacementPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2017-02-17T05:26:42.493Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AWebpackShellPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2017-02-17T03:57:19.688Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AStaticSiteGeneratorWebpackPlugin%E8%AF%A6%E8%A7%A3/</loc>
     
     <lastmod>2017-02-17T03:41:13.313Z</lastmod>
@@ -47,13 +68,6 @@
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AWebpackBrowserPlugin%E8%AF%A6%E8%A7%A3/</loc>
     
     <lastmod>2017-02-17T03:41:13.104Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AWebpackShellPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    
-    <lastmod>2017-02-17T03:41:13.077Z</lastmod>
     
   </url>
   
@@ -152,13 +166,6 @@
     <loc>http://www.fedjs.com/2016/12/sale-yourself-for-money/</loc>
     
     <lastmod>2017-02-17T03:40:39.993Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ANormalModuleReplacementPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    
-    <lastmod>2017-02-17T03:40:39.964Z</lastmod>
     
   </url>
   

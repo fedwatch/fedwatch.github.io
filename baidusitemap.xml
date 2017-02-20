@@ -4,6 +4,60 @@
 
     
   <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ABannerPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2017-02-20T01:38:01.940Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：BannerPlugin详解</title>
+        <pubTime>2017-02-17T02:50:54.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AAngularPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2017-02-20T01:35:59.913Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：AngularPlugin详解</title>
+        <pubTime>2017-02-17T02:59:51.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9Aconfig%E5%8F%82%E6%95%B0%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2017-02-20T01:34:16.236Z</lastmod>
+    <data>
+        <display>
+        <title>webpack入门篇：config参数详解</title>
+        <pubTime>2017-02-16T07:15:07.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AHtmlWebpackPlugin%E8%AF%A6%E8%A7%A3/</loc>
     <lastmod>2017-02-17T09:30:42.760Z</lastmod>
     <data>
@@ -526,24 +580,6 @@
 
     
   <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ABannerPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2017-02-17T08:10:23.223Z</lastmod>
-    <data>
-        <display>
-        <title>webpack插件篇：BannerPlugin详解</title>
-        <pubTime>2017-02-17T02:50:54.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ARewirePlugin%E8%AF%A6%E8%A7%A3/</loc>
     <lastmod>2017-02-17T08:10:23.161Z</lastmod>
     <data>
@@ -730,24 +766,6 @@
         <display>
         <title>webpack插件篇：CommonsChunkPlugin详解</title>
         <pubTime>2017-02-17T01:49:53.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AAngularPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2017-02-17T08:07:32.881Z</lastmod>
-    <data>
-        <display>
-        <title>webpack插件篇：AngularPlugin详解</title>
-        <pubTime>2017-02-17T02:59:51.000Z</pubTime>
         
          
            
@@ -1115,24 +1133,6 @@
            
              
               <breadCrumb title="react" url="http://www.fedjs.com/categories/react/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9Aconfig%E5%8F%82%E6%95%B0%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2017-02-16T07:15:32.734Z</lastmod>
-    <data>
-        <display>
-        <title>webpack入门篇：config参数详解</title>
-        <pubTime>2017-02-16T07:15:07.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
           
         </display>
     </data>

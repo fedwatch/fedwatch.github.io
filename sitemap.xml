@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AOccurrenceOrderPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2017-02-20T02:56:25.148Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AUglifyJsPlugin%E8%AF%A6%E8%A7%A3/</loc>
     
     <lastmod>2017-02-20T02:26:12.290Z</lastmod>
@@ -75,13 +82,6 @@
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AOfflinePlugin%E8%AF%A6%E8%A7%A3/</loc>
     
     <lastmod>2017-02-17T08:36:57.328Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AOccurrenceOrderPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    
-    <lastmod>2017-02-17T08:35:55.228Z</lastmod>
     
   </url>
   

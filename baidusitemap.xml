@@ -4,6 +4,24 @@
 
     
   <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ACommonsChunkPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2017-02-20T01:54:34.111Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：CommonsChunkPlugin详解</title>
+        <pubTime>2017-02-17T01:49:53.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ABannerPlugin%E8%AF%A6%E8%A7%A3/</loc>
     <lastmod>2017-02-20T01:38:01.940Z</lastmod>
     <data>
@@ -748,24 +766,6 @@
         <display>
         <title>webpack插件篇：DedupePlugin详解</title>
         <pubTime>2017-02-17T02:51:31.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ACommonsChunkPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2017-02-17T08:10:22.547Z</lastmod>
-    <data>
-        <display>
-        <title>webpack插件篇：CommonsChunkPlugin详解</title>
-        <pubTime>2017-02-17T01:49:53.000Z</pubTime>
         
          
            

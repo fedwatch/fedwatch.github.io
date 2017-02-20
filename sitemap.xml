@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ACommonsChunkPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2017-02-20T01:54:34.111Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ABannerPlugin%E8%AF%A6%E8%A7%A3/</loc>
     
     <lastmod>2017-02-20T01:38:01.940Z</lastmod>
@@ -292,13 +299,6 @@
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ADedupePlugin%E8%AF%A6%E8%A7%A3/</loc>
     
     <lastmod>2017-02-17T08:10:22.599Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ACommonsChunkPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    
-    <lastmod>2017-02-17T08:10:22.547Z</lastmod>
     
   </url>
   

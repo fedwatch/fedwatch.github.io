@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9Aextract-text-webpack-plugin%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2017-02-20T02:14:21.507Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ACommonsChunkPlugin%E8%AF%A6%E8%A7%A3/</loc>
     
-    <lastmod>2017-02-20T01:54:34.111Z</lastmod>
+    <lastmod>2017-02-20T01:56:46.661Z</lastmod>
     
   </url>
   

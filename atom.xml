@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.fedjs.com/"/>
-  <updated>2017-02-17T08:01:35.621Z</updated>
+  <updated>2017-02-20T02:14:21.507Z</updated>
   <id>http://www.fedjs.com/</id>
   
   <author>
@@ -14,6 +14,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>webpack插件篇：extract-text-webpack-plugin详解</title>
+    <link href="http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9Aextract-text-webpack-plugin%E8%AF%A6%E8%A7%A3/"/>
+    <id>http://www.fedjs.com/2017/02/webpack插件篇：extract-text-webpack-plugin详解/</id>
+    <published>2017-02-20T02:04:09.000Z</published>
+    <updated>2017-02-20T02:14:21.507Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p>extract-text-webpack-plugin (提取样式插件)<br>把额外的数据（CSS代码）加到编译好的文件中</p>
+<h1 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> ExtractTextPlugin(<span class="string">"[name].[hash].css"</span>)</div></pre></td></tr></table></figure>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> ExtractTextPlugin = <span class="built_in">require</span>(<span class="string">"extract-text-webpack-plugin"</span>);</div><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">    <span class="attr">module</span>: &#123;</div><div class="line">        <span class="attr">loaders</span>: [</div><div class="line">            &#123; <span class="attr">test</span>: <span class="regexp">/\.css$/</span>, <span class="attr">loader</span>: ExtractTextPlugin.extract(<span class="string">"style-loader"</span>, <span class="string">"css-loader"</span>) &#125;</div><div class="line">        ]</div><div class="line">    &#125;,</div><div class="line">    <span class="attr">plugins</span>: [</div><div class="line">        <span class="keyword">new</span> HtmlWebpackPlugin(&#123;</div><div class="line">                <span class="attr">template</span>: <span class="string">'./src/public/index.html'</span>,</div><div class="line">                <span class="attr">inject</span>: <span class="string">'body'</span></div><div class="line">            &#125;),</div><div class="line">        <span class="keyword">new</span> ExtractTextPlugin(<span class="string">"[name].[hash].css"</span>)</div><div class="line">    ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;用途说明&quot;&gt;&lt;a href=&quot;#用途说明&quot; class=&quot;headerlink&quot; title=&quot;用途说明&quot;&gt;&lt;/a&gt;用途说明&lt;/h1&gt;&lt;p&gt;extract-text-webpack-plugin (提取样式插件)&lt;br&gt;把额外的数据（CSS代码）加到编译好的文件中
+    
+    </summary>
+    
+      <category term="webpack" scheme="http://www.fedjs.com/categories/webpack/"/>
+    
+    
+      <category term="webpack1" scheme="http://www.fedjs.com/tags/webpack1/"/>
+    
+      <category term="webpack 1.0" scheme="http://www.fedjs.com/tags/webpack-1-0/"/>
+    
+      <category term="webpack" scheme="http://www.fedjs.com/tags/webpack/"/>
+    
+      <category term="插件" scheme="http://www.fedjs.com/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+      <category term="extract-text-webpack-plugin" scheme="http://www.fedjs.com/tags/extract-text-webpack-plugin/"/>
+    
+  </entry>
   
   <entry>
     <title>webpack入门篇：webpack-dev-server服务器</title>
@@ -458,29 +490,6 @@
     <id>http://www.fedjs.com/2017/02/webpack插件篇：NgRequirePlugin详解/</id>
     <published>2017-02-17T03:02:02.000Z</published>
     <updated>2017-02-17T08:10:23.755Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p> ()</p>
-<h1 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
-<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;用途说明&quot;&gt;&lt;a href=&quot;#用途说明&quot; class=&quot;headerlink&quot; title=&quot;用途说明&quot;&gt;&lt;/a&gt;用途说明&lt;/h1&gt;&lt;p&gt; ()&lt;/p&gt;
-&lt;h1 id=&quot;webpack-config-js配置&quot;&gt;&lt;a href=&quot;#webpack-config-
-    
-    </summary>
-    
-      <category term="webpack" scheme="http://www.fedjs.com/categories/webpack/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>webpack插件篇：RewirePlugin详解</title>
-    <link href="http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ARewirePlugin%E8%AF%A6%E8%A7%A3/"/>
-    <id>http://www.fedjs.com/2017/02/webpack插件篇：RewirePlugin详解/</id>
-    <published>2017-02-17T03:01:22.000Z</published>
-    <updated>2017-02-17T08:10:23.161Z</updated>
     
     <content type="html"><![CDATA[<h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p> ()</p>
 <h1 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>

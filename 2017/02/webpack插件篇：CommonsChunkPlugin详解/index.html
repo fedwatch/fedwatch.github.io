@@ -91,20 +91,23 @@
 
 <meta name="description" content="用途说明CommonsChunkPlugin (公共代码提取插件)
 默认会把所有入口节点的公共代码提取出来生成一个新的 JS 代码文件。
-webpack.config.js配置123new webpack.optimize.CommonsChunkPlugin(options)//默认会把所有入口节点的公共代码提取出来,生成一个common.jsnew webpack.optimize.Commo">
+
+options.name or options.names (string|string[ ]): The chunk name of the commons chunk. An existing chunk can be selected by passin">
 <meta property="og:type" content="article">
 <meta property="og:title" content="webpack插件篇：CommonsChunkPlugin详解">
 <meta property="og:url" content="http://www.fedjs.com/2017/02/webpack插件篇：CommonsChunkPlugin详解/index.html">
 <meta property="og:site_name" content="浮声新志">
 <meta property="og:description" content="用途说明CommonsChunkPlugin (公共代码提取插件)
 默认会把所有入口节点的公共代码提取出来生成一个新的 JS 代码文件。
-webpack.config.js配置123new webpack.optimize.CommonsChunkPlugin(options)//默认会把所有入口节点的公共代码提取出来,生成一个common.jsnew webpack.optimize.Commo">
-<meta property="og:updated_time" content="2017-02-20T01:54:34.111Z">
+
+options.name or options.names (string|string[ ]): The chunk name of the commons chunk. An existing chunk can be selected by passin">
+<meta property="og:updated_time" content="2017-02-20T01:56:46.661Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="webpack插件篇：CommonsChunkPlugin详解">
 <meta name="twitter:description" content="用途说明CommonsChunkPlugin (公共代码提取插件)
 默认会把所有入口节点的公共代码提取出来生成一个新的 JS 代码文件。
-webpack.config.js配置123new webpack.optimize.CommonsChunkPlugin(options)//默认会把所有入口节点的公共代码提取出来,生成一个common.jsnew webpack.optimize.Commo">
+
+options.name or options.names (string|string[ ]): The chunk name of the commons chunk. An existing chunk can be selected by passin">
 
 
 
@@ -364,6 +367,15 @@ webpack.config.js配置123new webpack.optimize.CommonsChunkPlugin(options)//默�
       
         <h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p>CommonsChunkPlugin (公共代码提取插件)</p>
 <p>默认会把所有入口节点的公共代码提取出来生成一个新的 JS 代码文件。</p>
+<ul>
+<li><code>options.name</code> or <code>options.names</code> (<code>string|string[ ]</code>): The chunk name of the commons chunk. An existing chunk can be selected by passing a name of an existing chunk. If an array of strings is passed this is equal to invoking the plugin multiple times for each chunk name. If omitted and options.async or options.children is set all chunks are used, otherwise options.filename is used as chunk name.</li>
+<li><code>options.filename</code> (<code>string</code>): The filename template for the commons chunk. Can contain the same placeholder as output.filename. If omitted the original filename is not modified (usually output.filename or output.chunkFilename).</li>
+<li><code>options.minChunks</code> (<code>number|Infinity|function(module, count) -&gt; boolea</code>n): The minimum number of chunks which need to contain a module before it’s moved into the commons chunk. The number must be greater than or equal 2 and lower than or equal to the number of chunks. Passing Infinity just creates the commons chunk, but moves no modules into it. By providing a function you can add custom logic. (Defaults to the number of chunks)</li>
+<li><code>options.chunks</code> (<code>string[]</code>): Select the source chunks by chunk names. The chunk must be a child of the commons chunk. If omitted all entry chunks are selected.</li>
+<li><code>options.children</code> (<code>boolean</code>): If true all children of the commons chunk are selected</li>
+<li><code>options.async</code> (<code>boolean|string</code>): If true a new async commons chunk is created as child of options.name and sibling of options.chunks. It is loaded in parallel with options.chunks. It is possible to change the name of the output file by providing the desired string instead of true.</li>
+<li><code>options.minSize</code> (<code>number</code>): Minimum size of all common module before a commons chunk is created.</li>
+</ul>
 <h1 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> webpack.optimize.CommonsChunkPlugin(options)</div><div class="line"><span class="comment">//默认会把所有入口节点的公共代码提取出来,生成一个common.js</span></div><div class="line"><span class="keyword">new</span> webpack.optimize.CommonsChunkPlugin(<span class="string">'common.js'</span>)</div></pre></td></tr></table></figure>
 <h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><h2 id="Commons-chunk-for-entries"><a href="#Commons-chunk-for-entries" class="headerlink" title="Commons chunk for entries"></a>Commons chunk for entries</h2><p>Generate an extra chunk, which contains common modules shared between entry points.</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> CommonsChunkPlugin(&#123;</div><div class="line">  <span class="attr">name</span>: <span class="string">"commons"</span>,</div><div class="line">  <span class="comment">// (the commons chunk name)</span></div><div class="line"></div><div class="line">  filename: <span class="string">"commons.js"</span>,</div><div class="line">  <span class="comment">// (the filename of the commons chunk)</span></div><div class="line"></div><div class="line">  <span class="comment">// minChunks: 3,</span></div><div class="line">  <span class="comment">// (Modules must be shared between 3 entries)</span></div><div class="line"></div><div class="line">  <span class="comment">// chunks: ["pageA", "pageB"],</span></div><div class="line">  <span class="comment">// (Only use these entries)</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
@@ -489,7 +501,7 @@ webpack.config.js配置123new webpack.optimize.CommonsChunkPlugin(options)//默�
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">69</span>
+                <span class="site-state-item-count">70</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -507,7 +519,7 @@ webpack.config.js配置123new webpack.optimize.CommonsChunkPlugin(options)//默�
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

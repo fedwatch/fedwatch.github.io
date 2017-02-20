@@ -4,8 +4,36 @@
 
     
   <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9Aextract-text-webpack-plugin%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2017-02-20T02:14:21.507Z</lastmod>
+    <data>
+        <display>
+        <title>webpack插件篇：extract-text-webpack-plugin详解</title>
+        <pubTime>2017-02-20T02:04:09.000Z</pubTime>
+        
+        <tag>webpack1</tag>
+         
+        <tag>webpack 1.0</tag>
+         
+        <tag>webpack</tag>
+         
+        <tag>插件</tag>
+         
+        <tag>extract-text-webpack-plugin</tag>
+         
+         
+           
+             
+              <breadCrumb title="webpack" url="http://www.fedjs.com/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ACommonsChunkPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2017-02-20T01:54:34.111Z</lastmod>
+    <lastmod>2017-02-20T01:56:46.661Z</lastmod>
     <data>
         <display>
         <title>webpack插件篇：CommonsChunkPlugin详解</title>

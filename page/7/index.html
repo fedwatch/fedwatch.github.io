@@ -245,6 +245,331 @@
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://www.fedjs.com/2017/02/webpack-react-入门Demo展示/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="蒋万万">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="浮声新志">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none" itemprop="url image" alt="浮声新志" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/02/webpack-react-入门Demo展示/" itemprop="url">
+                  react-webpack 入门Demo展示
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-16T15:54:07+08:00">
+                2017-02-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/react/" itemprop="url" rel="index">
+                    <span itemprop="name">react</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/02/webpack-react-入门Demo展示/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/webpack-react-入门Demo展示/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="基本命令配置"><a href="#基本命令配置" class="headerlink" title="基本命令配置"></a>基本命令配置</h1><ol>
+<li><p>node环境下npm包的安装依赖 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">$ mkdir react-demo &amp;&amp; cd react-demo</div><div class="line">$ npm i -S webpack webpack-dev-server \</div><div class="line">html-webpack-plugin webpack-merge \</div><div class="line">babel-loader babel-core css-loader \</div><div class="line">style-loader babel-preset-react-hmre \</div><div class="line">babel-preset-es2015 babel-preset-react -D</div><div class="line"></div><div class="line">$ mkdir app dist assets</div><div class="line">$ vim assets/index.tmpl.html</div></pre></td></tr></table></figure>
+</li>
+<li><p>编写 index.tmpl.html</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;<span class="name">%=</span> <span class="attr">htmlWebpackPlugin.options.title</span> %&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"root"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>配置你的 package.json 参数</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">"script"</span>:&#123;</div><div class="line">        <span class="attr">"build"</span>:<span class="string">"webpack ."</span>,</div><div class="line">        <span class="attr">"start"</span>:<span class="string">"webpack-dev-server ."</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">"babel"</span>:&#123;</div><div class="line">      <span class="attr">"presets"</span>:[</div><div class="line">        <span class="string">"es2015"</span>,<span class="string">"react"</span></div><div class="line">      ],</div><div class="line">      <span class="attr">"env"</span>:&#123;</div><div class="line">        <span class="attr">"start"</span>:&#123;</div><div class="line">          <span class="attr">"presets"</span>:[</div><div class="line">              <span class="string">"react-hmre"</span></div><div class="line">          ]</div><div class="line">        &#125;</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>新建 webpack.config.js 文件，来初始化webpack设置</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>);</div><div class="line"><span class="keyword">const</span> HtmlWebpackPlugin = <span class="built_in">require</span>(<span class="string">'html-webpack-plugin'</span>);</div><div class="line"><span class="keyword">const</span> webpack = <span class="built_in">require</span>(<span class="string">'webpack'</span>);</div><div class="line"><span class="keyword">const</span> merge = <span class="built_in">require</span>(<span class="string">'webpack-merge'</span>);</div><div class="line"><span class="keyword">const</span> TAGET = process.env.npm_lifecycle_event;</div><div class="line">process.env.BABEL_ENV = TAGET;</div><div class="line"><span class="keyword">const</span> PATHS = &#123;</div><div class="line">    <span class="attr">app</span>: path.join(__dirname,<span class="string">'app'</span>),</div><div class="line">    <span class="attr">build</span>: path.join(__dirname,<span class="string">'dist'</span>),</div><div class="line">    <span class="attr">template</span>: path.join(__dirname,<span class="string">'assets'</span>,<span class="string">'index.tmpl.html'</span>)</div><div class="line">&#125;;</div><div class="line"><span class="keyword">const</span> common = &#123;</div><div class="line">    <span class="attr">entry</span>:&#123;</div><div class="line">        <span class="attr">app</span>:PATHS.app</div><div class="line">    &#125;,</div><div class="line">    <span class="attr">output</span>:&#123;</div><div class="line">        <span class="attr">path</span>:PATHS.build,</div><div class="line">        <span class="attr">filename</span>:<span class="string">'bundle.js'</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">plugins</span>:[</div><div class="line">        <span class="keyword">new</span> HtmlWebpackPlugin(&#123;</div><div class="line">            <span class="attr">title</span>: <span class="string">'react demo'</span>,</div><div class="line">            <span class="attr">template</span>: PATHS.template,</div><div class="line">            <span class="attr">inject</span>: <span class="string">'body'</span></div><div class="line">        &#125;)</div><div class="line">    ],</div><div class="line">    <span class="attr">module</span>:&#123;</div><div class="line">     <span class="attr">loaders</span>: [</div><div class="line">         &#123;</div><div class="line">          <span class="attr">test</span>: <span class="regexp">/\.jsx?$/</span>,</div><div class="line">          <span class="attr">loaders</span>: [<span class="string">'babel?cacheDirectory'</span>],</div><div class="line">          <span class="attr">include</span>: PATHS.app,</div><div class="line">        &#125;, &#123;</div><div class="line">          <span class="attr">test</span>: <span class="regexp">/\.css$/</span>,</div><div class="line">          <span class="attr">loaders</span>: [<span class="string">'style'</span>, <span class="string">'css'</span>],</div><div class="line">          <span class="attr">include</span>: PATHS.app,</div><div class="line">        &#125;</div><div class="line">     ],</div><div class="line">    &#125;,</div><div class="line">    <span class="attr">resolve</span>:&#123;</div><div class="line">        <span class="attr">extensions</span>:[<span class="string">''</span>,<span class="string">'js'</span>,<span class="string">'jsx'</span>]</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="keyword">if</span>(TAGET === <span class="string">'start'</span> || ! TAGET) &#123;</div><div class="line">    <span class="built_in">module</span>.exports = merge(common,&#123;</div><div class="line">        <span class="attr">devtool</span>:<span class="string">'eval-source-map'</span>,</div><div class="line">        <span class="attr">devServer</span>:&#123;</div><div class="line">            <span class="attr">contentBase</span>:<span class="string">'/dist'</span>,</div><div class="line">            <span class="attr">historyApiFallback</span>: <span class="literal">true</span>,</div><div class="line">            <span class="attr">hot</span>:<span class="literal">true</span>,</div><div class="line">            <span class="attr">inline</span>:<span class="literal">true</span>,</div><div class="line">            <span class="attr">progress</span>:<span class="literal">true</span>,</div><div class="line">            <span class="attr">stats</span>:<span class="string">'errors-only'</span></div><div class="line">        &#125;,</div><div class="line">        <span class="attr">plugins</span>:[</div><div class="line">            <span class="keyword">new</span> webpack.HotModuleRepleacementPlugin(),</div><div class="line">        ]</div><div class="line">    &#125;);</div><div class="line">&#125;</div><div class="line"><span class="keyword">if</span>(TAGET === <span class="string">'start'</span> || ! TAGET) &#123;</div><div class="line">    <span class="built_in">module</span>.exports = merge(common,&#123;&#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h1 id="App-jsx文件编写"><a href="#App-jsx文件编写" class="headerlink" title="App.jsx文件编写"></a>App.jsx文件编写</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> React,&#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span></div><div class="line"><span class="keyword">import</span> &#123;</div><div class="line">    Router,</div><div class="line">    Route,</div><div class="line">    Link,</div><div class="line">    IndexLink,</div><div class="line">    IndexRoute,</div><div class="line">    hashHistory,</div><div class="line">&#125; <span class="keyword">from</span> <span class="string">'react-router'</span>;</div><div class="line"></div><div class="line"><span class="keyword">const</span> activeStyle = &#123;</div><div class="line">  <span class="attr">color</span>: <span class="string">'#53acff'</span>,</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="keyword">const</span> Nav = <span class="function"><span class="params">()</span> =&gt;</span> (</div><div class="line">    <span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">IndexLink</span> <span class="attr">onlyActiveOnIndex</span> <span class="attr">activeStyle</span>=<span class="string">&#123;activeStyle&#125;</span> <span class="attr">to</span>=<span class="string">"/"</span>&gt;</span>主页<span class="tag">&lt;/<span class="name">IndexLink</span>&gt;</span>          </div><div class="line">    <span class="tag">&lt;<span class="name">IndexLink</span> <span class="attr">onlyActiveOnIndex</span> <span class="attr">activeStyle</span>=<span class="string">&#123;activeStyle&#125;</span> <span class="attr">to</span>=<span class="string">"/address"</span>&gt;</span>地址<span class="tag">&lt;/<span class="name">IndexLink</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">);</div><div class="line"></div><div class="line"><span class="keyword">const</span> Container = <span class="function">(<span class="params">props</span>) =&gt;</span>(</div><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">Nav</span> /&gt;</span> &#123; props.children &#125;</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span>);</div><div class="line"></div><div class="line"><span class="keyword">const</span> Twitter = <span class="function"><span class="params">()</span> =&gt;</span> (<span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>@xiaomingplus twitter<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>);</div><div class="line"><span class="keyword">const</span> Instagram = <span class="function"><span class="params">()</span> =&gt;</span> (<span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>@xiaomingplus instagram<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>);</div><div class="line"></div><div class="line"><span class="keyword">const</span> NotFound = <span class="function"><span class="params">()</span> =&gt;</span> (</div><div class="line">    <span class="xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>404.. 找不到该页面!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></div><div class="line">);</div><div class="line"><span class="keyword">const</span> Home = <span class="function"><span class="params">()</span> =&gt;</span> (</div><div class="line">    <span class="xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>你好，这是主页。<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></div><div class="line">);</div><div class="line"><span class="keyword">const</span> Address = <span class="function">(<span class="params">props</span>) =&gt;</span> (</div><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">br</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">Link</span> <span class="attr">activeStyle</span>=<span class="string">&#123;&#123;</span> <span class="attr">color:</span> '#<span class="attr">53acff</span>' &#125;&#125; <span class="attr">to</span>=<span class="string">"/address"</span>&gt;</span>这是Twitter<span class="tag">&lt;/<span class="name">Link</span>&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">Link</span> <span class="attr">to</span>=<span class="string">"/address/instagram"</span>&gt;</span>这是Instagram<span class="tag">&lt;/<span class="name">Link</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>欢迎互关！<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">    &#123; props.children &#125;</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">);</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</div><div class="line">  construct() &#123;</div><div class="line">  &#125;</div><div class="line">  render() &#123;</div><div class="line">    <span class="keyword">return</span> (</div><div class="line">        &lt;Router history=&#123;hashHistory&#125;&gt;</div><div class="line">            &lt;Route path="/" component=&#123;Container&#125;&gt;</div><div class="line">                &lt;IndexRoute component=&#123;Home&#125; /&gt;</div><div class="line">                &lt;Route path="/address" component=&#123;Address&#125;&gt;</div><div class="line">                    &lt;IndexRoute component=&#123;Twitter&#125; /&gt;</div><div class="line">                    &lt;Route path="instagram" component=&#123;Instagram&#125; /&gt;</div><div class="line">                &lt;/Route&gt;</div><div class="line">                &lt;Route path="*" component=&#123;NotFound&#125; /&gt;</div><div class="line">            &lt;/Route&gt;</div><div class="line">        &lt;/Router&gt;</div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">export default App;</div></pre></td></tr></table></figure>
+<h1 id="index-jsx文件编写"><a href="#index-jsx文件编写" class="headerlink" title="index.jsx文件编写"></a>index.jsx文件编写</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">'react-dom'</span>;</div><div class="line"><span class="keyword">import</span> App <span class="keyword">from</span> <span class="string">'./App.jsx'</span>;</div><div class="line"></div><div class="line">ReactDOM.render(</div><div class="line">    <span class="xml"><span class="tag">&lt;<span class="name">App</span> /&gt;</span>, </span></div><div class="line">    document.getElementById('root')</div><div class="line">);</div></pre></td></tr></table></figure>
+<h1 id="本地启动服务器"><a href="#本地启动服务器" class="headerlink" title="本地启动服务器"></a>本地启动服务器</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm start</div></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://www.fedjs.com/2017/02/webpack入门篇：config参数详解/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="蒋万万">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="浮声新志">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none" itemprop="url image" alt="浮声新志" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/02/webpack入门篇：config参数详解/" itemprop="url">
+                  webpack入门篇：config参数详解
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-16T15:15:07+08:00">
+                2017-02-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/webpack/" itemprop="url" rel="index">
+                    <span itemprop="name">webpack</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/02/webpack入门篇：config参数详解/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/webpack入门篇：config参数详解/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="参数的详解配置（英文）"><a href="#参数的详解配置（英文）" class="headerlink" title="参数的详解配置（英文）"></a><a href="http://webpack.github.io/docs/configuration.html" target="_blank" rel="external">参数的详解配置（英文）</a></h4><h1 id="plugins"><a href="#plugins" class="headerlink" title="plugins"></a>plugins</h1><p>插件项 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">plugins:[commonsPlugin]</div></pre></td></tr></table></figure>
+<h1 id="entry"><a href="#entry" class="headerlink" title="entry"></a>entry</h1><p>打包文件的入口点。</p>
+<h1 id="output"><a href="#output" class="headerlink" title="output"></a>output</h1><p>打包文件的输出点。</p>
+<h1 id="module-loader"><a href="#module-loader" class="headerlink" title="module.loader"></a>module.loader</h1><p>多个 loader 之间用“!”连接起来</p>
+<h1 id="resolve"><a href="#resolve" class="headerlink" title="resolve"></a>resolve</h1>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://www.fedjs.com/2017/02/webpack插件篇：20个你必须知道的插件/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1503,315 +1828,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-Project" itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://www.fedjs.com/2016/12/key-231-sites/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="蒋万万">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="浮声新志">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none" itemprop="url image" alt="浮声新志" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/key-231-sites/" itemprop="url">
-                  231个密码溢出
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-20T12:01:34+08:00">
-                2016-12-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Project/" itemprop="url" rel="index">
-                    <span itemprop="name">Project</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2016/12/key-231-sites/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/key-231-sites/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>这事是真的！<br>231个全球最大最重要的账户密码，在BC论坛以比特币出价交易的方式出售了！里面有很多秘密资料。</p>
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-tags" itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://www.fedjs.com/2014/01/layout-css/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="蒋万万">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="浮声新志">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none" itemprop="url image" alt="浮声新志" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2014/01/layout-css/" itemprop="url">
-                  css布局指南
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-01-12T15:59:32+08:00">
-                2014-01-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CSS/" itemprop="url" rel="index">
-                    <span itemprop="name">CSS</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2014/01/layout-css/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2014/01/layout-css/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="为什么要学习布局技巧"><a href="#为什么要学习布局技巧" class="headerlink" title="为什么要学习布局技巧"></a>为什么要学习布局技巧</h1><h1 id="CSS-比-table-更好吗？"><a href="#CSS-比-table-更好吗？" class="headerlink" title="CSS 比 table 更好吗？"></a>CSS 比 table 更好吗？</h1><h1 id="CSS的标准开发规范"><a href="#CSS的标准开发规范" class="headerlink" title="CSS的标准开发规范"></a>CSS的标准开发规范</h1><h1 id="新的CSS框架技术"><a href="#新的CSS框架技术" class="headerlink" title="新的CSS框架技术"></a>新的CSS框架技术</h1>
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/6/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span>
+    <a class="extend prev" rel="prev" href="/page/6/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/8/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1852,7 +1873,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">70</span>
+                <span class="site-state-item-count">72</span>
                 <span class="site-state-item-name">精选教程</span>
               </a>
             </div>

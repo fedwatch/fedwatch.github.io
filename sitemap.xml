@@ -2,6 +2,83 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AHotModuleReplacementPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2017-02-20T08:59:15.894Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9Awebpack%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2017-02-20T08:54:14.468Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fedjs.com/2017/02/React-%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9A%E4%BB%80%E4%B9%88%E6%98%AFReact/</loc>
+    
+    <lastmod>2017-02-20T08:42:19.617Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ANoErrorsPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2017-02-20T03:53:28.949Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AProvidePlugin%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2017-02-20T03:50:42.334Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AResolverPlugin-FileAppendPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2017-02-20T03:36:05.172Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ADefinePlugin%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2017-02-20T03:35:11.382Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AngAnnotatePlugin%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2017-02-20T03:34:58.043Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fedjs.com/codeSpring/Demo/webpack.config.js</loc>
+    
+    <lastmod>2017-02-20T03:18:18.971Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AMinChunkSizePlugin%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2017-02-20T03:01:41.503Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ALimitChunkCountPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2017-02-20T03:00:50.637Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AOccurrenceOrderPlugin%E8%AF%A6%E8%A7%A3/</loc>
     
     <lastmod>2017-02-20T02:56:25.148Z</lastmod>
@@ -86,20 +163,6 @@
   </url>
   
   <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AMinChunkSizePlugin%E8%AF%A6%E8%A7%A3/</loc>
-    
-    <lastmod>2017-02-17T08:34:55.563Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ALimitChunkCountPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    
-    <lastmod>2017-02-17T08:34:01.272Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AOptimize%E4%BC%98%E5%8C%96%E7%B1%BB%E6%8F%92%E4%BB%B6%E6%9C%89%E5%93%AA%E4%BA%9B/</loc>
     
     <lastmod>2017-02-17T08:32:23.630Z</lastmod>
@@ -145,13 +208,6 @@
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ADependency-Injection%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E6%8F%92%E4%BB%B6%E6%9C%89%E5%93%AA%E4%BA%9B/</loc>
     
     <lastmod>2017-02-17T08:32:23.365Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ANoErrorsPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    
-    <lastmod>2017-02-17T08:30:07.551Z</lastmod>
     
   </url>
   
@@ -261,20 +317,6 @@
   </url>
   
   <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AHotModuleReplacementPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    
-    <lastmod>2017-02-17T08:10:23.066Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AngAnnotatePlugin%E8%AF%A6%E8%A7%A3/</loc>
-    
-    <lastmod>2017-02-17T08:10:23.030Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AWebpackBrowserPlugin%E8%AF%A6%E8%A7%A3/</loc>
     
     <lastmod>2017-02-17T08:10:22.925Z</lastmod>
@@ -282,23 +324,9 @@
   </url>
   
   <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ADefinePlugin%E8%AF%A6%E8%A7%A3/</loc>
-    
-    <lastmod>2017-02-17T08:10:22.806Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AWatchIgnorePlugin%E8%AF%A6%E8%A7%A3/</loc>
     
     <lastmod>2017-02-17T08:10:22.722Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AProvidePlugin%E8%AF%A6%E8%A7%A3/</loc>
-    
-    <lastmod>2017-02-17T08:10:22.682Z</lastmod>
     
   </url>
   
@@ -348,13 +376,6 @@
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AWebpackShellPlugin%E8%AF%A6%E8%A7%A3/</loc>
     
     <lastmod>2017-02-17T05:54:33.411Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AResolverPlugin-FileAppendPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    
-    <lastmod>2017-02-17T05:50:07.688Z</lastmod>
     
   </url>
   

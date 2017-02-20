@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.fedjs.com/"/>
-  <updated>2017-02-20T02:24:43.632Z</updated>
+  <updated>2017-02-20T08:54:14.468Z</updated>
   <id>http://www.fedjs.com/</id>
   
   <author>
@@ -14,6 +14,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>webpack入门篇：webpack命令行参数详解</title>
+    <link href="http://www.fedjs.com/2017/02/webpack%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9Awebpack%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0%E8%AF%A6%E8%A7%A3/"/>
+    <id>http://www.fedjs.com/2017/02/webpack入门篇：webpack命令行参数详解/</id>
+    <published>2017-02-20T08:50:32.000Z</published>
+    <updated>2017-02-20T08:54:14.468Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="webpack命令行参数"><a href="#webpack命令行参数" class="headerlink" title="webpack命令行参数"></a>webpack命令行参数</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ webpack --config XXX.js   //使用另一份配置文件（比如webpack.config2.js）来打包</div><div class="line">$ webpack --watch   //监听变动并自动打包</div><div class="line">$ webpack -p    //压缩混淆脚本，这个非常非常重要！</div><div class="line">$ webpack -d    //生成map映射文件，告知哪些模块被最终打包到哪里了</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;webpack命令行参数&quot;&gt;&lt;a href=&quot;#webpack命令行参数&quot; class=&quot;headerlink&quot; title=&quot;webpack命令行参数&quot;&gt;&lt;/a&gt;webpack命令行参数&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>React 入门篇：什么是React</title>
+    <link href="http://www.fedjs.com/2017/02/React-%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9A%E4%BB%80%E4%B9%88%E6%98%AFReact/"/>
+    <id>http://www.fedjs.com/2017/02/React-入门篇：什么是React/</id>
+    <published>2017-02-20T08:42:19.000Z</published>
+    <updated>2017-02-20T08:42:19.617Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>webpack插件篇：extract-text-webpack-plugin详解</title>
@@ -369,17 +401,18 @@
     <link href="http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ANoErrorsPlugin%E8%AF%A6%E8%A7%A3/"/>
     <id>http://www.fedjs.com/2017/02/webpack插件篇：NoErrorsPlugin详解/</id>
     <published>2017-02-17T03:05:27.000Z</published>
-    <updated>2017-02-17T08:30:07.551Z</updated>
+    <updated>2017-02-20T03:53:28.949Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p>NoErrorsPlugin ()</p>
+    <content type="html"><![CDATA[<h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p>NoErrorsPlugin (不显示错误插件)</p>
 <p>When there are errors while compiling this plugin skips the emitting phase (and recording phase), so there are no assets emitted that include errors. The emitted flag in the stats is false for all assets. If you are using the CLI, the webpack process will not exit with an error code by enabling this plugin. If you want webpack to “fail” when using the CLI, please check out the bail option.</p>
 <h1 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> webpack.NoErrorsPlugin()</div></pre></td></tr></table></figure>
-<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>]]></content>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<h1 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a>官方文档</h1><p><a href="http://webpack.github.io/docs/list-of-plugins.html#noerrorsplugin" target="_blank" rel="external">NoErrorsPlugin</a></p>]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;用途说明&quot;&gt;&lt;a href=&quot;#用途说明&quot; class=&quot;headerlink&quot; title=&quot;用途说明&quot;&gt;&lt;/a&gt;用途说明&lt;/h1&gt;&lt;p&gt;NoErrorsPlugin ()&lt;/p&gt;
-&lt;p&gt;When there are errors while compiling
+      &lt;h1 id=&quot;用途说明&quot;&gt;&lt;a href=&quot;#用途说明&quot; class=&quot;headerlink&quot; title=&quot;用途说明&quot;&gt;&lt;/a&gt;用途说明&lt;/h1&gt;&lt;p&gt;NoErrorsPlugin (不显示错误插件)&lt;/p&gt;
+&lt;p&gt;When there are errors while co
     
     </summary>
     
@@ -421,16 +454,15 @@
     <link href="http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AHotModuleReplacementPlugin%E8%AF%A6%E8%A7%A3/"/>
     <id>http://www.fedjs.com/2017/02/webpack插件篇：HotModuleReplacementPlugin详解/</id>
     <published>2017-02-17T03:04:23.000Z</published>
-    <updated>2017-02-17T08:10:23.066Z</updated>
+    <updated>2017-02-20T08:59:15.894Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p> ()</p>
+    <content type="html"><![CDATA[<h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p> ()<br>模块热替换,如果不在dev-server模式下，需要记录数据，recordPath，生成每个模块的热更新模块</p>
 <h1 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
 <h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;用途说明&quot;&gt;&lt;a href=&quot;#用途说明&quot; class=&quot;headerlink&quot; title=&quot;用途说明&quot;&gt;&lt;/a&gt;用途说明&lt;/h1&gt;&lt;p&gt; ()&lt;/p&gt;
-&lt;h1 id=&quot;webpack-config-js配置&quot;&gt;&lt;a href=&quot;#webpack-config-
+      &lt;h1 id=&quot;用途说明&quot;&gt;&lt;a href=&quot;#用途说明&quot; class=&quot;headerlink&quot; title=&quot;用途说明&quot;&gt;&lt;/a&gt;用途说明&lt;/h1&gt;&lt;p&gt; ()&lt;br&gt;模块热替换,如果不在dev-server模式下，需要记录数据，recordPath，生成每个模块的热更新模块&lt;
     
     </summary>
     
@@ -445,53 +477,6 @@
     <id>http://www.fedjs.com/2017/02/webpack插件篇：SourceMapDevToolPlugin详解/</id>
     <published>2017-02-17T03:03:57.000Z</published>
     <updated>2017-02-17T08:10:23.625Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p> ()</p>
-<h1 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
-<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;用途说明&quot;&gt;&lt;a href=&quot;#用途说明&quot; class=&quot;headerlink&quot; title=&quot;用途说明&quot;&gt;&lt;/a&gt;用途说明&lt;/h1&gt;&lt;p&gt; ()&lt;/p&gt;
-&lt;h1 id=&quot;webpack-config-js配置&quot;&gt;&lt;a href=&quot;#webpack-config-
-    
-    </summary>
-    
-      <category term="webpack" scheme="http://www.fedjs.com/categories/webpack/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>webpack插件篇：I18nPlugin详解</title>
-    <link href="http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AI18nPlugin%E8%AF%A6%E8%A7%A3/"/>
-    <id>http://www.fedjs.com/2017/02/webpack插件篇：I18nPlugin详解/</id>
-    <published>2017-02-17T03:02:56.000Z</published>
-    <updated>2017-02-17T09:13:42.881Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p>I18nPlugin (本地化插件)</p>
-<p>Create bundles with translations baked in. Then you can serve the translated bundle to your clients.</p>
-<h1 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> I18nPlugin(translations: <span class="built_in">Object</span>, fnName = <span class="string">"__"</span>: <span class="built_in">String</span>)</div></pre></td></tr></table></figure>
-<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;用途说明&quot;&gt;&lt;a href=&quot;#用途说明&quot; class=&quot;headerlink&quot; title=&quot;用途说明&quot;&gt;&lt;/a&gt;用途说明&lt;/h1&gt;&lt;p&gt;I18nPlugin (本地化插件)&lt;/p&gt;
-&lt;p&gt;Create bundles with translations bak
-    
-    </summary>
-    
-      <category term="webpack" scheme="http://www.fedjs.com/categories/webpack/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>webpack插件篇：NgRequirePlugin详解</title>
-    <link href="http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ANgRequirePlugin%E8%AF%A6%E8%A7%A3/"/>
-    <id>http://www.fedjs.com/2017/02/webpack插件篇：NgRequirePlugin详解/</id>
-    <published>2017-02-17T03:02:02.000Z</published>
-    <updated>2017-02-17T08:10:23.755Z</updated>
     
     <content type="html"><![CDATA[<h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p> ()</p>
 <h1 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>

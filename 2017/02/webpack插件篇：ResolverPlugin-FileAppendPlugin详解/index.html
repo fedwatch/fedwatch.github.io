@@ -97,7 +97,7 @@ This plugin will append a path to the module directory to find a match, which ca
 <meta property="og:site_name" content="浮声新志">
 <meta property="og:description" content="用途说明ResolverPlugin.FileAppendPlugin ()
 This plugin will append a path to the module directory to find a match, which can be useful if you have a module which has an incorrect “main” entry in its packa">
-<meta property="og:updated_time" content="2017-02-17T05:50:07.688Z">
+<meta property="og:updated_time" content="2017-02-20T03:36:05.172Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="webpack插件篇：ResolverPlugin.FileAppendPlugin详解">
 <meta name="twitter:description" content="用途说明ResolverPlugin.FileAppendPlugin ()
@@ -361,7 +361,7 @@ This plugin will append a path to the module directory to find a match, which ca
       
         <h1 id="用途说明"><a href="#用途说明" class="headerlink" title="用途说明"></a>用途说明</h1><p>ResolverPlugin.FileAppendPlugin ()</p>
 <p>This plugin will append a path to the module directory to find a match, which can be useful if you have a module which has an incorrect “main” entry in its package.json/bower.json etc (e.g. “main”: “Gruntfile.js”). You can use this plugin as a special case to load the correct file for this module.</p>
-<h1 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<h1 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> webpack.ResolverPlugin([</div><div class="line">  <span class="keyword">new</span> webpack.ResolverPlugin.FileAppendPlugin([<span class="string">'dist.js'</span>])</div><div class="line">])</div></pre></td></tr></table></figure>
 <h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> webpack.ResolverPlugin([</div><div class="line">  <span class="keyword">new</span> webpack.ResolverPlugin.FileAppendPlugin([<span class="string">'/dist/compiled-moduled.js'</span>])</div><div class="line">])</div></pre></td></tr></table></figure>
       
     </div>
@@ -475,7 +475,7 @@ This plugin will append a path to the module directory to find a match, which ca
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">70</span>
+                <span class="site-state-item-count">72</span>
                 <span class="site-state-item-name">精选教程</span>
               </a>
             </div>

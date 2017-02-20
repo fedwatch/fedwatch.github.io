@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AUglifyJsPlugin%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2017-02-20T02:26:12.290Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9Aextract-text-webpack-plugin%E8%AF%A6%E8%A7%A3/</loc>
     
-    <lastmod>2017-02-20T02:14:21.507Z</lastmod>
+    <lastmod>2017-02-20T02:24:43.632Z</lastmod>
     
   </url>
   
@@ -278,13 +285,6 @@
     <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9ADefinePlugin%E8%AF%A6%E8%A7%A3/</loc>
     
     <lastmod>2017-02-17T08:10:22.806Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fedjs.com/2017/02/webpack%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%9AUglifyJsPlugin%E8%AF%A6%E8%A7%A3/</loc>
-    
-    <lastmod>2017-02-17T08:10:22.766Z</lastmod>
     
   </url>
   
